@@ -1,0 +1,25 @@
+{
+  "name": "fun-fruit",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-gtm": "^0.1.1",
+    "gridsome-plugin-sass-resources-loader": "^0.0.3",
+    "gsap": "./gsap-bonus.tgz",
+    "swiper": "^5.4.1",
+    "vue-scrollto": "^2.18.1"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^2.2.36",
+    "node-sass": "^4.14.1",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^8.0.2",
+    "tailwindcss": "^1.8.10"
+  }
+}
