@@ -62,8 +62,8 @@ export default {
                     markers:false,
                     toggleActions:"play pause reverse reverse"
                 }
-            }), splitText = new SplitText(".product-title",{type:"words,chars"}), chars=splitText.chars
-            gsap.set(".product-titl",{perspective:400})
+            }), splitText = new SplitText(".product-title",{type:"words,chars"}), words=splitText.words,chars=splitText.chars
+            gsap.set(".product-title",{perspective:400})
             tl.from(chars, {duration: 0.6, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:'bottom center',  ease:"back", stagger:{each:0.03, from:'left'}}, "+=0");
         },
         slider(){
