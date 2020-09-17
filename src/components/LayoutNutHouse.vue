@@ -74,12 +74,6 @@ export default {
     
 }
 </script>
-<style lang="scss" scoped>
-    .btn-amazon{
-        background: linear-gradient(180deg, #F6D491 10.58%, #F1BA55 74.54%);
-        border: 1.04724px solid #9D7D3E;
-        img{
-            transform: translateY(5px);
-        }
-    }
+<style lang="scss">
+    
 </style>

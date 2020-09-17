@@ -1,6 +1,6 @@
 <template lang="pug">
     .flex.flex-col.justify-start
-        header.sticky.top-0.w-full.bg-ui-background
+        header.top-0.w-full.bg-ui-background
             LayoutBanner
             #header
                 .flex.items-center.justify-center.p-6
