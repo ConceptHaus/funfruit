@@ -29,6 +29,8 @@ section#products
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-6.png")
                 h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
                 button.block.my-4.mx-auto.bg-ui-blue.text-white.font-bold.py-2.px-4.rounded Ver producto
+        .swiper-button-prev.products-prev
+        .swiper-button-next.products-next
 
 </template>
 <script>
@@ -73,6 +75,10 @@ export default {
                 loop:true,
                 speed:1200,
                 slidesPerView:5,
+                navigation:{
+                    nextEl:'.products-next',
+                    prevEl:'.products-prev'
+                },
                 breakpoints:{
                     320:{
                         slidesPerView:1,
@@ -89,5 +95,16 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+    .products-prev,.products-next{
+        color: #FFF;
+        top: 40%;
+        right: 2%;
+        &::after{
+            padding: 1rem;
+            background: #BDBDBD;
+        }
+    }
+    .products-prev{
+        left: 2%;
+    }
 </style>

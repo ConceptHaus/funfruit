@@ -16,7 +16,7 @@ section.snack
             img.mx-auto.py-16(src="@/assets/images/products/snack-4.png", alt="alt")
     .block.text-center.my-20
         h2.text-center.text-3xl.text-ui-navy.my-6 ¿SE TE ANTOJÓ?
-        button.text-xl.block.my-4.mx-auto.bg-ui-blue.text-white.py-2.px-4.rounded Ver todos los producto
+        button.text-xl.block.my-4.mx-auto.bg-ui-blue.text-white.py-2.px-4.rounded Ver todos los productos
 </template>
 <script>
 import Swiper from 'swiper'
