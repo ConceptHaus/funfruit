@@ -5,7 +5,7 @@
                 h2.text-3xl.text-ui-gray.my-12 TODOS LOS PRODUCTOS
             .flex.justify-around
                 .block(class="w-1/3")
-                    h2.text-4xl.text-ui-gray THE NUTHOUSE
+                    h2.text-4xl.text-ui-gray THE NUT HOUSE
                     p.text-xl.text-ui-typo Deliciosa línea premium de semillas y frutas secas empacadas, bajas en calorías y sin sal.
                     p.text-xl.text-ui-typo.my-3 #[b Sabías que...] Además de ser riquísimos, los frutos secos ayudan a reducir los niveles de colesterol, a perder peso y a prevenir el deterioro cognitivo. ¡Se volverán tus favoritos!
                 .block(class="w-2/3")
