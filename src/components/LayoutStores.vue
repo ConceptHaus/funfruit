@@ -1,18 +1,18 @@
 <template lang="pug">
 section
-    .container.my-20
+    .container
         .flex.justify-center.my-5
             h2.text-center.text-3xl.text-ui-navy ¡ENCUÉNTRANOS TAMBIÉN AQUÍ!
         .flex.justify-center.my-4
             p.text-ui-typo.text-lg Toda nuestra variedad #[b a tu alcance]
-    .flex.justify-around.my-20.items-center
-        .card.overflow-hidden.shadow-lg.rounded-lg
-            img.px-12.py-24(src="@/assets/images/walmart.svg", alt="alt")
-        .card.overflow-hidden.shadow-lg.rounded-lg
-            img.p-16(src="@/assets/images/chedraui.svg", alt="alt")
-        .card.overflow-hidden.shadow-lg.rounded-lg
-            img.px-12.py-24(src="@/assets/images/amazon.svg", alt="alt")
-    .flex.justify-around.my-20.items-center
+    .flex.flex-col.sm_flex-row.justify-around.my-20.items-center
+        .card.overflow-hidden.shadow-lg
+            img.px-32.py-16(src="@/assets/images/walmart.svg", alt="alt")
+        .card.overflow-hidden.shadow-lg
+            img.px-32.py-16(src="@/assets/images/chedraui.svg", alt="alt")
+        .card.overflow-hidden.shadow-lg
+            img.px-32.py-16(src="@/assets/images/amazon.svg", alt="alt")
+    .flex.justify-around.my-10.sm_my-20.items-center
         button.text-xl.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-5.rounded ¡Quiero comprar ahí!
 </template>
 <script>
@@ -21,5 +21,13 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+    .card{
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px rgba(51, 51, 51, 0.16);
+        transition: all .2s ease;
+        &:hover{
+            background: #F2F2F2;
+            cursor: pointer;
+        }
+    }
 </style>
