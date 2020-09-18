@@ -2,7 +2,7 @@
 section
     .container
         .flex.justify-center.my-5
-            h2.text-center.text-3xl.text-ui-navy ¡ENCUÉNTRANOS TAMBIÉN AQUÍ!
+            h2.text-center.text-3xl.text-ui-navy #[span ¡] ENCUÉNTRANOS TAMBIÉN AQUÍ #[span !]
         .flex.justify-center.my-4
             p.text-ui-typo.text-lg Toda nuestra variedad #[b a tu alcance]
     .flex.flex-col.sm_flex-row.justify-around.my-20.items-center
@@ -13,7 +13,7 @@ section
         .card.overflow-hidden.shadow-lg
             img.px-32.py-16(src="@/assets/images/amazon.svg", alt="alt")
     .flex.justify-around.my-10.sm_my-20.items-center
-        button.text-xl.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-5.rounded ¡Quiero comprar ahí!
+        button.text-xl.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-6.rounded ¡Quiero comprar ahí!
 </template>
 <script>
 export default {
@@ -28,6 +28,11 @@ export default {
         &:hover{
             background: #F2F2F2;
             cursor: pointer;
+        }
+    }
+    h2{
+        span{
+            font-family: 'BadTyp';
         }
     }
 </style>

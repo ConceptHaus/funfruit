@@ -4,31 +4,49 @@ section#products
         .flex.justify-center
             h2.text-4xl.text-ui-navy.product-title.text-center ELIGE TU PREFERIDO
     .swiper-container.slideproduct.mb-24
-        .swiper-wrapper
-            .swiper-slide.slide
+        .swiper-wrapper.py-24
+            .swiper-slide.slide(@mouseenter="sunEffect(1)" @mouseleave="sunEffectOver")
+                .products__sun.products__sun1.absolute
+                    img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-1.png")
                 h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.font-bold.py-2.px-4.rounded Ver producto
-            .swiper-slide.slide
+                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+            .swiper-slide.slide(@mouseenter="sunEffect(2)" @mouseleave="sunEffectOver")
+                .products__sun.products__sun2.absolute
+                    img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-2.png")
                 h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.font-bold.py-2.px-4.rounded Ver producto
-            .swiper-slide.slide
+                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+            .swiper-slide.slide(@mouseenter="sunEffect(3)" @mouseleave="sunEffectOver")
+                .products__sun.products__sun3.absolute
+                    img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-3.png")
                 h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.font-bold.py-2.px-4.rounded Ver producto
-            .swiper-slide.slide
+                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+            .swiper-slide.slide(@mouseenter="sunEffect(4)" @mouseleave="sunEffectOver")
+                .products__sun.products__sun4.absolute
+                    img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-4.png")
                 h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.font-bold.py-2.px-4.rounded Ver producto
-            .swiper-slide.slide
+                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+            .swiper-slide.slide(@mouseenter="sunEffect(5)" @mouseleave="sunEffectOver")
+                .products__sun.products__sun5.absolute
+                    img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-5.png")
                 h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.font-bold.py-2.px-4.rounded Ver producto
-            .swiper-slide.slide
+                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+            .swiper-slide.slide(@mouseenter="sunEffect(6)" @mouseleave="sunEffectOver")
+                .products__sun.products__sun6.absolute
+                    img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-6.png")
                 h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.font-bold.py-2.px-4.rounded Ver producto
+                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+            .swiper-slide.slide(@mouseenter="sunEffect(7)" @mouseleave="sunEffectOver")
+                .products__sun.products__sun7.absolute
+                    img.mx-auto.object-fit(src="@/assets/images/sun.svg")
+                img.mx-auto.object-fit(src="@/assets/images/products/nut-7.png")
+                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center MANGO ENCHILADO
+                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
         .swiper-button-prev.products-prev
         .swiper-button-next.products-next
 
@@ -43,7 +61,7 @@ import 'swiper/css/swiper.min.css'
 export default {
     data(){
         return{
-
+            
         }
     },
     mounted(){
@@ -55,6 +73,14 @@ export default {
         this.textEffect()
     },
     methods:{
+        sunEffect(index){
+            this.sunAnimation = gsap.timeline()
+            this.sunAnimation.fromTo(`.products__sun${index}`,0.3,{scale:0,opacity:0},{scale:1,opacity:1, rotate:90, ease:'power'})
+            this.sunAnimation.play()
+        },
+        sunEffectOver(){
+            this.sunAnimation.reverse()
+        },
         textEffect(){
             var tl = gsap.timeline({
                 scrollTrigger:
@@ -71,8 +97,6 @@ export default {
         slider(){
             var swiper = new Swiper('.slideproduct',{
                 effect:'slide',
-                autoplay:true,
-                loop:true,
                 speed:1200,
                 slidesPerView:5,
                 navigation:{
@@ -95,16 +119,44 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+    .slide{
+        transition: .2s all ease;
+        cursor: pointer;
+        &:hover{
+            // .products__sun{
+            //     opacity: 1;
+            // }
+        }
+    }
+    .products{
+        &__sun{
+            z-index: -10;
+            transform: translateY(-80px);
+            left: 3%;
+            opacity: 0;
+        }
+    }
     .products-prev,.products-next{
         color: #FFF;
-        top: 40%;
-        right: 2%;
+        top: 38%;
+        right: 3%;
+        transition: .2s all ease;
+        @include down-screen(mobile-big){
+            right: 5%;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
         &::after{
-            padding: 1rem;
+            padding: 1rem 1.5rem;
             background: #BDBDBD;
+            opacity: 0.55;
         }
     }
     .products-prev{
-        left: 2%;
+        left:3%;
+        @include down-screen(mobile-big){
+            left: 5%;
+        }
     }
 </style>
