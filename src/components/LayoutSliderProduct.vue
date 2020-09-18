@@ -1,8 +1,8 @@
 <template lang="pug">
 section#products
-    .container.my-20
+    .container.sm_my-20.my-10
         .flex.justify-center
-            h2.text-4xl.text-ui-navy.product-title ELIGE TU PREFERIDO
+            h2.text-4xl.text-ui-navy.product-title.text-center ELIGE TU PREFERIDO
     .swiper-container.slideproduct.mb-24
         .swiper-wrapper
             .swiper-slide.slide
@@ -72,7 +72,17 @@ export default {
                 autoplay:true,
                 loop:true,
                 speed:1200,
-                slidesPerView:5
+                slidesPerView:5,
+                breakpoints:{
+                    320:{
+                        slidesPerView:1,
+                        spaceBetween:0
+                    },
+                    1200:{
+                        slidesPerView:5,
+                        spaceBetween:0
+                    }
+                }
             })
         }
     }

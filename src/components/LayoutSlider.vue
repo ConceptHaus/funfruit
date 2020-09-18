@@ -14,8 +14,10 @@ section
                         span.slide-title AHORA EN
                         img.amazon-logo.object-fit(src="@/assets/images/amazon-white.svg", alt="alt")
                         button#button-cta.btn-amazon.block.my-10.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-fit.align-bottom(src="@/assets/images/amazon-logo.svg")]
+            .swiper-button-prev
+            .swiper-button-next
     .flex.bg-ui-green.justify-center.p-8
-        p.text-xl.text-ui-light Frescura y calidad garantizadas. #[b ¡Compra ya!]
+        p.text-xl.text-ui-light.text-center Frescura y calidad garantizadas. #[b ¡Compra ya!]
 
 </template>
 <script>
@@ -58,9 +60,13 @@ export default {
                 autoplay:true,
                 loop:true,
                 speed:400,
-                delay:7000,
+                delay:10000,
                 preloadImages:true,
                 updateOnImagesReady:true,
+                navigation:{
+                    nextEl:'.swiper-button-next',
+                    prevEl:'.swiper-button-prev'
+                }
             })
             swiper.on('init', () => this.effects())
             swiper.on('slideNextTransitionStart', () => this.effects())
@@ -79,7 +85,9 @@ export default {
         width: 100%;
         height: 100%;
     }
-
+    .swiper-button-prev, .swiper-button-next{
+        color: #FFF !important;
+    }
     .slide {
         background-repeat: no-repeat;
         background-size: cover;

@@ -2,18 +2,18 @@
 section.snack
     .container.my-20
         .flex.justify-center
-            h2.snack-title(class="w-1/2").text-center.text-3xl.text-ui-navy UN DELICIOSO #[span.text-ui-secondary SNACK] EN CUALQUIER MOMENTO DEL DÍA
+            h2(class="sm_w-1/2").w-full.snack-title.text-center.text-3xl.text-ui-navy UN DELICIOSO #[span.text-ui-secondary SNACK] EN CUALQUIER MOMENTO DEL DÍA
         .flex.justify-center.my-5
             p.text-ui-typo Elige el que más se te #[b antoje]
-    .flex.justify-around.my-20
-        .card.overflow-hidden.shadow-lg.rounded-lg
-            img(src="@/assets/images/products/snack-1.png", alt="alt")
-        .card.overflow-hidden.shadow-lg.rounded-lg
-            img(src="@/assets/images/products/snack-2.png", alt="alt")
-        .card.overflow-hidden.shadow-lg.rounded-lg
-            img(src="@/assets/images/products/snack-3.png", alt="alt")
-        .card.overflow-hidden.shadow-lg.rounded-lg
-            img(src="@/assets/images/products/snack-4.png", alt="alt")
+    .flex.flex-col.sm_flex-row.justify-around.my-10.sm_my-20
+        .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+            img.mx-auto.py-16(src="@/assets/images/products/snack-1.png", alt="alt")
+        .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+            img.mx-auto.py-16(src="@/assets/images/products/snack-2.png", alt="alt")
+        .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+            img.mx-auto.py-16(src="@/assets/images/products/snack-3.png", alt="alt")
+        .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+            img.mx-auto.py-16(src="@/assets/images/products/snack-4.png", alt="alt")
     .block.text-center.my-20
         h2.text-center.text-3xl.text-ui-navy.my-6 ¿SE TE ANTOJÓ?
         button.text-xl.block.my-4.mx-auto.bg-ui-blue.text-white.py-2.px-4.rounded Ver todos los producto
@@ -52,5 +52,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+    .card{
+        box-shadow: 0px 5px 10px rgba(51, 51, 51, 0.16);
+        border-radius: 20px;
+        transition: all .2s ease;
+        
+    }
 </style>
