@@ -6,13 +6,6 @@
   
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
 
 <script>
 import LayoutHeader from "~/components/LayoutHeader.vue"

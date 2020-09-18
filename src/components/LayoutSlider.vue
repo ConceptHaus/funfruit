@@ -79,6 +79,9 @@ export default {
     #slider {
         width: 100%;
         height: 80vh;
+        @include down-screen(mobile-big){
+            height: 100vh;
+        }
     }
 
     .swiper-container {
@@ -87,6 +90,13 @@ export default {
     }
     .swiper-button-prev, .swiper-button-next{
         color: #FFF !important;
+        transition: .2s all ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+        @include down-screen(mobile-big){
+            display: none;
+        }
     }
     .slide {
         background-repeat: no-repeat;
