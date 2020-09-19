@@ -12,8 +12,8 @@ section
                 .swiper-slide.slide(:style="{ 'background-image': 'url(' + require('../assets/images/slider-2.jpg') + ')' }")
                     .slide-text.text-right.absolute.right-0.mr-16.second-text
                         span.slide-title AHORA EN
-                        img.amazon-logo.object-fit(src="@/assets/images/amazon-white.svg", alt="alt")
-                        button#button-cta.btn-amazon.block.my-10.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-fit.align-bottom(src="@/assets/images/amazon-logo.svg")]
+                        img.amazon-logo.object-contain(src="@/assets/images/amazon-white.svg", alt="alt")
+                        button#button-cta.btn-amazon.block.my-10.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-contain.align-bottom(src="@/assets/images/amazon-logo.svg")]
             .swiper-button-prev
             .swiper-button-next
     .flex.bg-ui-green.justify-center.p-8
@@ -116,6 +116,9 @@ export default {
             svg{
                 margin-left: 35%;
             }
+            @include down-screen(mobile-big){
+                margin-top: 25%;
+            }
         }
         &-title{
             white-space: normal;
@@ -124,6 +127,9 @@ export default {
             font-family: 'Funfruit', sans-serif;
             color: #FFF;
             line-height: 1.2;
+            @include down-screen(mobile-big){
+                font-size: 3rem;
+            }
             span {
                 white-space: pre;
                 display: inline-block;
