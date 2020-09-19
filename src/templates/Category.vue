@@ -22,7 +22,7 @@ query($id: ID!){
     category(id:$id){
         title
         slug
-        belongsTo{
+        belongsTo(sortBy:"id", order:ASC){
             edges{
                 node{
                 ... on Products{

@@ -13,14 +13,6 @@ export default [
     component: c1
   },
   {
-    path: "/nut-house/snack-spicy-fruit-mix-25g/",
-    component: c1
-  },
-  {
-    path: "/nut-house/snack-spicy-trail-mix-25g/",
-    component: c1
-  },
-  {
     path: "/nut-house/snack-mix-cereza/",
     component: c1
   },
@@ -50,6 +42,10 @@ export default [
   },
   {
     path: "/nut-house/nuez-de-la-india-con-chipotle/",
+    component: c1
+  },
+  {
+    path: "/nut-house/pistache-salado-tostado-2/",
     component: c1
   },
   {

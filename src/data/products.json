@@ -1,18 +1,6 @@
 [
     {
         "id":1,
-        "slug":"mango-enchilado",
-        "categorySlug":"nut-house",
-        "category":"The Nut House",
-        "title":"Mango Enchilado",
-        "description":"Cont. 550 g / 8 Piezas por caja / Vitrolero con tapa",
-        "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
-        "images": "./src/assets/images/products/mango-enchilado-1.jpg",
-        "link":"amazon-link",
-        "id_category":1
-    },
-    {
-        "id":2,
         "slug":"snack-mix-cereza",
         "categorySlug":"nut-house",
         "category":"The Nut House",
@@ -24,7 +12,7 @@
         "id_category":1
     },
     {
-        "id":3,
+        "id":2,
         "slug":"snack-mix-papaya",
         "categorySlug":"nut-house",
         "category":"The Nut House",
@@ -35,6 +23,18 @@
         "link":"",
         "id_category":1
         
+    },
+    {
+        "id":3,
+        "slug":"snack-mix-piña",
+        "categorySlug":"nut-house",
+        "category":"The Nut House",
+        "title":"Snack Mix Piña",
+        "description":"Cont. 25 g / 24 Piezas por caja / Bolsa Stick Pack",
+        "info":["333.92 Kcal","13","40.52","21.52","7.48","16.64","2.08","29.08"],
+        "images":"./src/assets/images/products/mix-pina-1.jpg",
+        "link":"",
+        "id_category":1
     },
     {
         "id":4,
@@ -50,18 +50,6 @@
     },
     {
         "id":5,
-        "slug":"snack-mix-piña",
-        "categorySlug":"nut-house",
-        "category":"The Nut House",
-        "title":"Snack Mix Piña",
-        "description":"Cont. 25 g / 24 Piezas por caja / Bolsa Stick Pack",
-        "info":["333.92 Kcal","13","40.52","21.52","7.48","16.64","2.08","29.08"],
-        "images":"./src/assets/images/products/mix-pina-1.jpg",
-        "link":"",
-        "id_category":1
-    },
-    {
-        "id":6,
         "slug":"snack-miguelito-spicy-fruit-mix",
         "categorySlug":"nut-house",
         "category":"The Nut House",
@@ -73,7 +61,7 @@
         "id_category":1
     },
     {
-        "id":7,
+        "id":6,
         "slug":"snack-miguelito-spicy-trail-mix",
         "categorySlug":"nut-house",
         "category":"The Nut House",
@@ -85,14 +73,26 @@
         "id_category":1
     },
     {
-        "id":8,
-        "slug":"nuez-pecanera-mitades-con-chipotle",
+        "id":7,
+        "slug":"nueces-mixtas-tostadas",
         "categorySlug":"nut-house",
         "category":"The Nut House",
-        "title":"Nuez Pecanera Mitades con Chipotle",
-        "description":"Cont. 600 g / 6  Piezas por caja / Vitrolero con tapa",
-        "info":["923.02 Kcal","16.29","20.93","3.16","9.46","90.22","53.79","532.39"],
-        "images":"./src/assets/images/products/nuez-chipotle-1.jpg",
+        "title":"Nueces Mixtas Tostadas",
+        "description":"Cont. 900 g / 6  Piezas por caja / Vitrolero con tapa",
+        "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
+        "images":"./src/assets/images/products/nueces-mixtas-1.jpg",
+        "link":"",
+        "id_category":1
+    },
+    {
+        "id":8,
+        "slug":"nuez-de-la-india-con-chipotle",
+        "categorySlug":"nut-house",
+        "category":"The Nut House",
+        "title":"Nuez de la India con Chipotle",
+        "description":"Cont. 850 g / 6  Piezas por caja / Vitrolero con tapa",
+        "info":["525.22 Kcal","19.33","29.93","6.29","6.29","39.26","53.79","1093.85"],
+        "images":"./src/assets/images/products/nuez-india-chipotle-1.jpg",
         "link":"",
         "id_category":1
     },
@@ -110,18 +110,6 @@
     },
     {
         "id":10,
-        "slug":"nuez-de-la-india-con-chipotle",
-        "categorySlug":"nut-house",
-        "category":"The Nut House",
-        "title":"Nuez de la India con Chipotle",
-        "description":"Cont. 850 g / 6  Piezas por caja / Vitrolero con tapa",
-        "info":["525.22 Kcal","19.33","29.93","6.29","6.29","39.26","53.79","1093.85"],
-        "images":"./src/assets/images/products/nuez-india-chipotle-1.jpg",
-        "link":"",
-        "id_category":1
-    },
-    {
-        "id":11,
         "slug":"nuez-pecanera-mitades",
         "categorySlug":"nut-house",
         "category":"The Nut House",
@@ -129,6 +117,18 @@
         "description":"Cont. 750 g / 6  Piezas por caja / Vitrolero con tapa",
         "info":["701 Kcal","11.5","16","3","7.5","69","42","0"],
         "images":"./src/assets/images/products/nuez-pecanera-1.jpg",
+        "link":"",
+        "id_category":1
+    },
+    {
+        "id":11,
+        "slug":"nuez-pecanera-mitades-con-chipotle",
+        "categorySlug":"nut-house",
+        "category":"The Nut House",
+        "title":"Nuez Pecanera Mitades con Chipotle",
+        "description":"Cont. 600 g / 6  Piezas por caja / Vitrolero con tapa",
+        "info":["923.02 Kcal","16.29","20.93","3.16","9.46","90.22","53.79","532.39"],
+        "images":"./src/assets/images/products/nuez-chipotle-1.jpg",
         "link":"",
         "id_category":1
     },
@@ -164,7 +164,7 @@
         "title":"Mango Enchilado (Grande)",
         "description":"Cont. 850 g / 6  Piezas por caja  /  Vitrolero con tapa",
         "info":["314 Kcal","0.8","82","55.6","5.2","0.4","0","816"],
-        "images":"./src/assets/images/products/mango-enchilado-1.jpg",
+        "images":"./src/assets/images/products/mango-enchilado-850.jpg",
         "link":"",
         "id_category":1
     },
@@ -174,9 +174,9 @@
         "categorySlug":"nut-house",
         "category":"The Nut House",
         "title":"Nueces Mixtas Tostadas",
-        "description":"Cont. 900 g / 6  Piezas por caja / Vitrolero con tapa",
+        "description":"Cont. 480 g / 8  Piezas por caja / Vitrolero con tapa",
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
-        "images":"./src/assets/images/products/nueces-mixtas-1.jpg",
+        "images":"./src/assets/images/products/nueces-mixtas-tostadas-400.jpg",
         "link":"",
         "id_category":1
     },
@@ -194,14 +194,14 @@
     },
     {
         "id":17,
-        "slug":"nueces-mixtas-tostadas",
+        "slug":"mango-enchilado",
         "categorySlug":"nut-house",
         "category":"The Nut House",
-        "title":"Nueces Mixtas Tostadas",
-        "description":"Cont. 480 g / 8  Piezas por caja / Vitrolero con tapa",
+        "title":"Mango Enchilado",
+        "description":"Cont. 550 g / 8 Piezas por caja / Vitrolero con tapa",
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
-        "images":"./src/assets/images/products/nueces-mixtas-1.jpg",
-        "link":"",
+        "images": "./src/assets/images/products/mango-enchilado-550.jpg",
+        "link":"amazon-link",
         "id_category":1
     },
     {
@@ -212,24 +212,12 @@
         "title":"Pistache Tostado",
         "description":"Cont. 400 g / 8  Piezas por caja / Vitrolero con tapa",
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
-        "images":"./src/assets/images/products/pistache-1.jpg",
+        "images":"./src/assets/images/products/pistache-400.jpg",
         "link":"",
         "id_category":1
     },
     {
         "id":19,
-        "slug":"mezcla-de-frutos-y-nueces",
-        "categorySlug":"nut-house",
-        "category":"The Nut House",
-        "title":"Mezcla de Frutos y Nueces",
-        "description":"Cont. 90 g / 14  Piezas por caja / Bolsa Zipper Stand up",
-        "info":["779.19 Kcal","24.33","34.33","4.66","12.33","65.99","20.99","769.25"],
-        "images":"./src/assets/images/products/frutos-nueces-1.jpg",
-        "link":"",
-        "id_category":1
-    },
-    {
-        "id":20,
         "slug":"mezcla-de-higo-y-nueces",
         "categorySlug":"nut-house",
         "category":"The Nut House",
@@ -241,19 +229,19 @@
         "id_category":1
     },
     {
-        "id":21,
-        "slug":"nuez-de-la-india-1",
+        "id":20,
+        "slug":"mezcla-de-frutos-y-nueces",
         "categorySlug":"nut-house",
         "category":"The Nut House",
-        "title":"Nuez de la India (Bolsa Pequeña)",
+        "title":"Mezcla de Frutos y Nueces",
         "description":"Cont. 90 g / 14  Piezas por caja / Bolsa Zipper Stand up",
-        "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
-        "images":"./src/assets/images/products/nut-nuez-india-1.jpg",
+        "info":["779.19 Kcal","24.33","34.33","4.66","12.33","65.99","20.99","769.25"],
+        "images":"./src/assets/images/products/frutos-nueces-1.jpg",
         "link":"",
         "id_category":1
     },
     {
-        "id":22,
+        "id":21,
         "slug":"nuez-de-la-india-chipotle",
         "categorySlug":"nut-house",
         "category":"The Nut House",
@@ -265,19 +253,19 @@
         "id_category":1
     },
     {
-        "id":23,
-        "slug":"nuez-pecanera-en-mitades",
+        "id":22,
+        "slug":"nuez-de-la-india-1",
         "categorySlug":"nut-house",
         "category":"The Nut House",
-        "title":"Nuez Pecanera en Mitades",
+        "title":"Nuez de la India (Bolsa Pequeña)",
         "description":"Cont. 90 g / 14  Piezas por caja / Bolsa Zipper Stand up",
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
-        "images":"./src/assets/images/products/nut-nuez-pecanera-1.jpg",
+        "images":"./src/assets/images/products/nut-nuez-india-1.jpg",
         "link":"",
         "id_category":1
     },
     {
-        "id":24,
+        "id":23,
         "slug":"nuez-pecanera-chipotle",
         "categorySlug":"nut-house",
         "category":"The Nut House",
@@ -289,7 +277,31 @@
         "id_category":1
     },
     {
+        "id":24,
+        "slug":"nuez-pecanera-en-mitades",
+        "categorySlug":"nut-house",
+        "category":"The Nut House",
+        "title":"Nuez Pecanera en Mitades",
+        "description":"Cont. 90 g / 14  Piezas por caja / Bolsa Zipper Stand up",
+        "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
+        "images":"./src/assets/images/products/nut-nuez-pecanera-1.jpg",
+        "link":"",
+        "id_category":1
+    },
+    {
         "id":25,
+        "slug":"pistache-salado-tostado-2",
+        "categorySlug":"nut-house",
+        "category":"The Nut House",
+        "title":"Pistache Salado y Tostado",
+        "description":"Cont. 90 g / 14 Piezas por caja / Bolsa Zipper Stand up",
+        "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
+        "images":"./src/assets/images/products/nut-pistache-1.jpg",
+        "link":"",
+        "id_category":1
+    },
+    {
+        "id":26,
         "slug":"spicy-fruit-mix",
         "categorySlug":"nut-house",
         "category":"The Nut House",
@@ -301,37 +313,13 @@
         "id_category":1
     },
     {
-        "id":26,
+        "id":27,
         "slug":"spicy-trail-mix",
         "categorySlug":"nut-house",
         "category":"The Nut House",
         "title":"Spicy Trail Mix",
         "description":"Cont. 75 g  /  14  Piezas por caja  /  Bolsa Zipper Stand up",
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
-        "images":"./src/assets/images/products/nut-spicy-trail-1.jpg",
-        "link":"",
-        "id_category":1
-    },
-    {
-        "id":27,
-        "slug":"snack-spicy-fruit-mix-25g",
-        "categorySlug":"nut-house",
-        "category":"The Nut House",
-        "title":"Snack Spicy Fruit Mix 25g.",
-        "description":"Cont. 25 g",
-        "info":["363.55 Kcal","1.68","92.66","71.01","5.40","0.87","0","990.05"],
-        "images":"./src/assets/images/products/nut-spicy-fruit-1.jpg",
-        "link":"",
-        "id_category":1
-    },
-    {
-        "id":28,
-        "slug":"snack-spicy-trail-mix-25g",
-        "categorySlug":"nut-house",
-        "category":"The Nut House",
-        "title":"Snack Spicy Trail Mix 25g.",
-        "description":"Cont. 25 g",
-        "info":["443.73 Kcal","11.27","72.63","14.46","8.54","15.81","3.47","1047.46"],
         "images":"./src/assets/images/products/nut-spicy-trail-1.jpg",
         "link":"",
         "id_category":1
