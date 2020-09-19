@@ -9,44 +9,51 @@ section#products
                 .products__sun.products__sun1.absolute
                     img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-1.png")
-                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE
+                g-link(to="/nut-house/pistache-tostado")
+                    button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
             .swiper-slide.slide(@mouseenter="sunEffect(2)" @mouseleave="sunEffectOver")
                 .products__sun.products__sun2.absolute
                     img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-2.png")
-                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center NUEZ DE LA INDIA
+                g-link(to="/nut-house/nuez-de-la-india-tostada-y-salada")
+                    button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
             .swiper-slide.slide(@mouseenter="sunEffect(3)" @mouseleave="sunEffectOver")
                 .products__sun.products__sun3.absolute
                     img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-3.png")
-                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center NUEZ PECANERA
+                g-link(to="/nut-house/nuez-pecanera-mitades")
+                    button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
             .swiper-slide.slide(@mouseenter="sunEffect(4)" @mouseleave="sunEffectOver")
                 .products__sun.products__sun4.absolute
                     img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-4.png")
-                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center NUEZ DE LA INDIA CON CHIPOTLE
+                g-link(to="/nut-house/nuez-de-la-india-con-chipotle")
+                    button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
             .swiper-slide.slide(@mouseenter="sunEffect(5)" @mouseleave="sunEffectOver")
                 .products__sun.products__sun5.absolute
                     img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-5.png")
-                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center NUECES MIXTAS
+                g-link(to="/nut-house/nueces-mixtas-tostadas")
+                    button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
             .swiper-slide.slide(@mouseenter="sunEffect(6)" @mouseleave="sunEffectOver")
                 .products__sun.products__sun6.absolute
                     img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-6.png")
-                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center PISTACHE - SALADO Y TOSTADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+                h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center ALMENDRA ENTERA
+                g-link(to="/nut-house/almendra-entera")
+                    button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
             .swiper-slide.slide(@mouseenter="sunEffect(7)" @mouseleave="sunEffectOver")
                 .products__sun.products__sun7.absolute
                     img.mx-auto.object-fit(src="@/assets/images/sun.svg")
                 img.mx-auto.object-fit(src="@/assets/images/products/nut-7.png")
                 h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center MANGO ENCHILADO
-                button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
+                g-link(to="/nut-house/mango-enchilado-1")
+                    button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto
         .swiper-button-prev.products-prev
         .swiper-button-next.products-next
 
@@ -122,10 +129,8 @@ export default {
     .slide{
         transition: .2s all ease;
         cursor: pointer;
-        &:hover{
-            // .products__sun{
-            //     opacity: 1;
-            // }
+        h2{
+            min-height: 60px;
         }
     }
     .products{
@@ -134,6 +139,10 @@ export default {
             transform: translateY(-80px);
             left: 3%;
             opacity: 0;
+            @include down-screen(mobile-big){
+                left: 15%;
+                opacity: 1;
+            }
         }
     }
     .products-prev,.products-next{
@@ -143,6 +152,7 @@ export default {
         transition: .2s all ease;
         @include down-screen(mobile-big){
             right: 5%;
+            top: 30%;
         }
         &:hover{
             transform: scale(1.1);
@@ -151,6 +161,10 @@ export default {
             padding: 1rem 1.5rem;
             background: #BDBDBD;
             opacity: 0.55;
+            @include down-screen(mobile-big){
+                padding: 0.5rem 1rem;
+                font-size: 2rem;
+            }
         }
     }
     .products-prev{
