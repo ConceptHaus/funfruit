@@ -11,6 +11,14 @@ module.exports = function (api) {
     const collection = actions.addCollection({
       typeName: 'Products'
     })
+    const categories = actions.addCollection('Category')
+    collection.addReference('id_category','Category')
+    categories.addNode({
+      id:'1',
+      title:'THE NUT HOUSE',
+      slug:'nut-house'
+    })
+    
     for(const product of Products){
       collection.addNode({
         id: product.id,
@@ -20,9 +28,9 @@ module.exports = function (api) {
         title: product.title,
         description: product.description,
         info: product.info,
-        images: product.images,
+        images: require.resolve(product.images),
         link: product.link,
-
+        id_category:product.id_category
       })
     }
   })
@@ -60,18 +68,18 @@ module.exports = function (api) {
       })
     })
 
-    data.allProducts.edges.forEach(({node})=>{
-      createPage({
-        path:`/category/${node.categorySlug}`,
-        component:'./src/templates/Category.vue',
-        context:{
-          id:node.id,
-          title:node.title,
-          images:node.images,
-          link:node.link
-        }
-      })
-    })
+    // data.allProducts.edges.forEach(({node})=>{
+    //   createPage({
+    //     path:`/category/${node.categorySlug}`,
+    //     component:'./src/templates/Category.vue',
+    //     context:{
+    //       id:node.id,
+    //       title:node.title,
+    //       images:node.images,
+    //       link:node.link
+    //     }
+    //   })
+    // })
     
   })
 

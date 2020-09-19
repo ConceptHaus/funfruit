@@ -26,6 +26,11 @@ module.exports = {
       }
     },
   ],
+  templates:{
+    Category:[{
+      path:'/category/:slug',
+    }]
+  },
   chainWebpack: config => {
     config.module
       .rule('pug')
