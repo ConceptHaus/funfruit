@@ -10,7 +10,7 @@
                         p.text-white {{$context.description}}
                         .border-solid.border.border-white.my-4
                         .flex.justify-around
-                            .block
+                            .block(v-if="$context.description.length > 1")
                                 p.text-white.font-bold Info. Nutrimental
                                 ul
                                     li.text-white Contenido energético
@@ -22,7 +22,7 @@
                                     li.text-white Grasas saturadas (g)
                                     li.text-white Sodio (g)
                             .block
-                                p.text-white.font-bold Por cada 100g
+                                p.text-white.font-bold(v-if="$context.description.length > 1") Por cada 100g
                                 ul
                                     li.text-white {{$context.info[0]}}
                                     li.text-white {{$context.info[1]}}
@@ -33,7 +33,8 @@
                                     li.text-white {{$context.info[6]}}
                                     li.text-white {{$context.info[7]}}
                         .border-solid.border.border-white.my-4
-                        button.btn-amazon.block.my-4.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-contain.align-bottom(src="@/assets/images/amazon-logo.svg")]
+                        button(v-if="$context.categorySlug === 'nut-house'").btn-amazon.block.my-4.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-contain.align-bottom(src="@/assets/images/amazon-logo.svg")]
+                        button(v-else).btn-whatsapp.block.my-4.mx-auto.text-ui-light.py-2.px-10.rounded #[img.mx-1.inline-block.object-contain.align-center(src="@/assets/images/whatsapp.svg")] Pedir ahora
                     .text-ui-typo.mt-4(v-if="$context.id<7") *Este producto puede también comercializarse en empaque colectivo con los otros sabores de la línea Snack Mix (Piña, Kiwi o Papaya)
             .border-solid.border.border-gray-400.my-4
             .flex.justify-center

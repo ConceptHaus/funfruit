@@ -9,7 +9,7 @@
         "info":["395.6 Kcal","12.4","56.4","35.6","6.8","16.4","2","10.8"],
         "images":"./src/assets/images/products/mix-cereza-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":2,
@@ -21,7 +21,7 @@
         "info":["417.51 Kcal","5","60.7","34.9","8.55","21.27","14.27","14.27","65.05"],
         "images":"./src/assets/images/products/mix-papaya-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
         
     },
     {
@@ -34,7 +34,7 @@
         "info":["333.92 Kcal","13","40.52","21.52","7.48","16.64","2.08","29.08"],
         "images":"./src/assets/images/products/mix-pina-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":4,
@@ -46,7 +46,7 @@
         "info":["323.53 Kcal","7.95","40.62","17.62","5.75","17.25","4.22","186.22"],
         "images":"./src/assets/images/products/mix-kiwi-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":5,
@@ -58,7 +58,7 @@
         "info":["363.55 Kcal","1.68","92.66","71.01","5.40","0.87","0","990.05"],
         "images":"./src/assets/images/products/spicy-fruit-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":6,
@@ -70,7 +70,7 @@
         "info":["443.73 Kcal","11.27","72.63","14.46","8.54","15.81","3.47","1047.46"],
         "images":"./src/assets/images/products/spicy-trail-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":7,
@@ -82,7 +82,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/nueces-mixtas-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":8,
@@ -94,7 +94,7 @@
         "info":["525.22 Kcal","19.33","29.93","6.29","6.29","39.26","53.79","1093.85"],
         "images":"./src/assets/images/products/nuez-india-chipotle-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":9,
@@ -106,7 +106,7 @@
         "info":["545 Kcal","20.5","31.5","7","8","41","4","715"],
         "images":"./src/assets/images/products/nuez-india-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":10,
@@ -118,7 +118,7 @@
         "info":["701 Kcal","11.5","16","3","7.5","69","42","0"],
         "images":"./src/assets/images/products/nuez-pecanera-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":11,
@@ -130,7 +130,7 @@
         "info":["923.02 Kcal","16.29","20.93","3.16","9.46","90.22","53.79","532.39"],
         "images":"./src/assets/images/products/nuez-chipotle-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":12,
@@ -142,7 +142,7 @@
         "info":["553.5 Kcal","23.5","31","6","5","39.5","0.75","685"],
         "images":"./src/assets/images/products/pistache-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":13,
@@ -154,7 +154,7 @@
         "info":["510 Kcal","22.5","33","3.5","13.5","28","0.75","0"],
         "images":"./src/assets/images/products/almendra-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":14,
@@ -166,7 +166,7 @@
         "info":["314 Kcal","0.8","82","55.6","5.2","0.4","0","816"],
         "images":"./src/assets/images/products/mango-enchilado-850.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":15,
@@ -178,7 +178,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/nueces-mixtas-tostadas-400.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":16,
@@ -190,7 +190,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/nuez-india-natural-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":17,
@@ -202,7 +202,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images": "./src/assets/images/products/mango-enchilado-550.jpg",
         "link":"amazon-link",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":18,
@@ -214,7 +214,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/pistache-400.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":19,
@@ -226,7 +226,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/higo-nueces-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":20,
@@ -238,7 +238,7 @@
         "info":["779.19 Kcal","24.33","34.33","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/frutos-nueces-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":21,
@@ -250,7 +250,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/nut-nuez-india-chipotle-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":22,
@@ -262,7 +262,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/nut-nuez-india-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":23,
@@ -274,7 +274,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/nut-nuez-pecanera-chipotle.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":24,
@@ -286,7 +286,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/nut-nuez-pecanera-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":25,
@@ -298,7 +298,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/nut-pistache-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":26,
@@ -310,7 +310,7 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/nut-spicy-fruit-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
     },
     {
         "id":27,
@@ -322,6 +322,259 @@
         "info":["779.19 Kcal","24.33","34.32","4.66","12.33","65.99","20.99","769.25"],
         "images":"./src/assets/images/products/nut-spicy-trail-1.jpg",
         "link":"",
-        "id_category":1
+        "id_category":"1"
+    },
+    {
+        "id":28,
+        "slug":"almendra-fileteada",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Almendra fileteada sin cutícula",
+        "description":"",
+        "info":["11.34 kg"],
+        "images":"./src/assets/images/products/almendra-fileteada.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":29,
+        "slug":"avellana-descascarada",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Avellaba descascarada con cutítula",
+        "description":"",
+        "info":[" kg"],
+        "images":"./src/assets/images/products/avellana-descascarada.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":30,
+        "slug":"ajonjoli-blanco",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Ajonjolí blanco sin cutícula",
+        "description":"",
+        "info":["5.34 kg"],
+        "images":"./src/assets/images/products/ajonjoli-blanco.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":31,
+        "slug":"arandano-deshidratado",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Arándano deshidratado",
+        "description":"",
+        "info":["11.34 kg"],
+        "images":"./src/assets/images/products/arandano-deshidratado.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":32,
+        "slug":"coco-rallado",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Coco rallado",
+        "description":"",
+        "info":["5 kg"],
+        "images":"./src/assets/images/products/coco-rallado.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":33,
+        "slug":"granillo-multicolor",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Granillo multicolor mate",
+        "description":"",
+        "info":["11.34 kg"],
+        "images":"./src/assets/images/products/granillo-multicolor.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":34,
+        "slug":"mini-gragea-blanca",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Mini gragea blanca mate",
+        "description":"",
+        "info":["5 kg"],
+        "images":"./src/assets/images/products/mini-gragea-blanca.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":35,
+        "slug":"mix-relleno",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Mix relleno",
+        "description":"",
+        "info":["11.34 kg"],
+        "images":"./src/assets/images/products/mix-relleno.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":36,
+        "slug":"mix-frutas",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Mix frutas",
+        "description":"",
+        "info":["10 kg"],
+        "images":"./src/assets/images/products/mix-frutas.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":37,
+        "slug":"mix-saludable-1",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Mix saludable 1",
+        "description":"",
+        "info":["5 kg"],
+        "images":"./src/assets/images/products/mix-saludable-1.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":38,
+        "slug":"mix-saludable-2",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Mix saludable 2",
+        "description":"",
+        "info":["5 kg"],
+        "images":"./src/assets/images/products/mix-saludable-2.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":39,
+        "slug":"nuez-pecanera-chico",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Nuez pecanera pedazo chico",
+        "description":"",
+        "info":["5 kg"],
+        "images":"./src/assets/images/products/nuez-pecanera-chico.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":40,
+        "slug":"nuez-pecanera-mitades",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Nuez pecanera mitades",
+        "description":"",
+        "info":["5 kg"],
+        "images":"./src/assets/images/products/nuez-pecanera-mitades.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":41,
+        "slug":"semilla-girasol",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Semilla de girasol sin cáscara",
+        "description":"",
+        "info":["22.68 kg"],
+        "images":"./src/assets/images/products/semilla-girasol.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":42,
+        "slug":"uva-pasa-selecta",
+        "categorySlug":"granel",
+        "category":"Granel",
+        "title":"Uva pasa selecta flame",
+        "description":"",
+        "info":["10 kg"],
+        "images":"./src/assets/images/products/uva-pasa-selecta.jpg",
+        "link":"",
+        "id_category":2
+    },
+    {
+        "id":43,
+        "slug":"funfruit-almendra-fileteada",
+        "categorySlug":"funfruit",
+        "category":"Funfruit",
+        "title":"Almendra fileteada",
+        "description":"",
+        "info":["125 g"],
+        "images":"./src/assets/images/products/funfruit-almendra-fileteada.jpg",
+        "link":"",
+        "id_category":3
+    },
+    {
+        "id":44,
+        "slug":"almendra-entera",
+        "categorySlug":"funfruit",
+        "category":"Funfruit",
+        "title":"Almendra entera",
+        "description":"",
+        "info":["180 g"],
+        "images":"./src/assets/images/products/almendra-entera.jpg",
+        "link":"",
+        "id_category":3
+    },
+    {
+        "id":45,
+        "slug":"funfruit-arandano-deshidratado",
+        "categorySlug":"funfruit",
+        "category":"Funfruit",
+        "title":"Arándano deshidratado",
+        "description":"",
+        "info":["180 g"],
+        "images":"./src/assets/images/products/funfruit-arandano-deshidratado.jpg",
+        "link":"",
+        "id_category":3
+    },
+    {
+        "id":46,
+        "slug":"uva-pasa",
+        "categorySlug":"funfruit",
+        "category":"Funfruit",
+        "title":"Uva pasa",
+        "description":"",
+        "info":["180 g"],
+        "images":"./src/assets/images/products/uva-pasa.jpg",
+        "link":"",
+        "id_category":3
+    },
+    {
+        "id":47,
+        "slug":"ciruela-pasa-sin-hueso",
+        "categorySlug":"funfruit",
+        "category":"Funfruit",
+        "title":"Ciruela pasa sin hueso",
+        "description":"",
+        "info":["180 g"],
+        "images":"./src/assets/images/products/ciruela-pasa-sin-hueso.jpg",
+        "link":"",
+        "id_category":3
+    },
+    {
+        "id":48,
+        "slug":"funfruit-nuez-pecanera-mitades",
+        "categorySlug":"funfruit",
+        "category":"Funfruit",
+        "title":"Nuez pecanera mitades",
+        "description":"",
+        "info":["125 g"],
+        "images":"./src/assets/images/products/funfruit-nuez-pecanera-mitades.jpg",
+        "link":"",
+        "id_category":3
     }
+    
 ]

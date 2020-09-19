@@ -27,10 +27,10 @@
                 .flex.flex-col.justify-center
                     button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
         .element
-            g-link.hover_text-ui-green.hover_font-bold(to="/") Fun Fruit
+            g-link.hover_text-ui-green.hover_font-bold(to="/category/funfruit") Fun Fruit
             img.active-shape.ml-auto(src="@/assets/images/active-shape.svg", alt="alt")
         .element
-            g-link.hover_text-ui-green.hover_font-bold(to="/") Productos a granel
+            g-link.hover_text-ui-green.hover_font-bold(to="/category/granel") Productos a granel
             img.active-shape.ml-auto(src="@/assets/images/active-shape.svg", alt="alt")
         .element
             g-link.hover_text-ui-green.hover_font-bold(to="/") Acerca de Fun Fruit
