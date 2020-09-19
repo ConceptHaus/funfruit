@@ -1,8 +1,8 @@
 <template lang="pug">
 .menu
-    .flex.items-center.justify-around.p-4
+    .flex.items-center.justify-around.p-4.flex-wrap
         .element(@click="animationMenu")
-            g-link.hover_text-ui-green.hover_font-bold(to="/") The Nut House
+            g-link.hover_text-ui-green.hover_font-bold(to="/nut-house") The Nut House
             img.active-shape.ml-auto(src="@/assets/images/active-shape.svg", alt="alt")
             .hero-menu.mt-4.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-8.left-0
                 img(src="@/assets/images/nuthouse-menu.png", alt="alt")
