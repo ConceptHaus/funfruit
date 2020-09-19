@@ -13,15 +13,15 @@ module.exports = function (api) {
     })
     for(const product of Products){
       collection.addNode({
-        id: project.id,
-        slug: project.slug,
-        categorySlug: project.categorySlug,
-        category: project.category,
-        title: project.title,
-        description: project.description,
-        info: project.info,
-        images: project.images,
-        link: project.link,
+        id: product.id,
+        slug: product.slug,
+        categorySlug: product.categorySlug,
+        category: product.category,
+        title: product.title,
+        description: product.description,
+        info: product.info,
+        images: product.images,
+        link: product.link,
 
       })
     }
@@ -45,9 +45,9 @@ module.exports = function (api) {
           }
         }
       }`)
-    data.Products.edges.forEach(({node})=>{
+    data.allProducts.edges.forEach(({node})=>{
       createPage({
-        path:`/${node.categorySlug}/${slug}`,
+        path:`/${node.categorySlug}/${node.slug}`,
         component:'./src/templates/Product.vue',
         context:{
           id:node.id,
@@ -60,9 +60,9 @@ module.exports = function (api) {
       })
     })
 
-    data.Products.edges.forEach(({node})=>{
+    data.allProducts.edges.forEach(({node})=>{
       createPage({
-        path:`/category/${categorySlug}`,
+        path:`/category/${node.categorySlug}`,
         component:'./src/templates/Category.vue',
         context:{
           id:node.id,
