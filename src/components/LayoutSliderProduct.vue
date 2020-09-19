@@ -171,6 +171,7 @@ export default {
         left:3%;
         @include down-screen(mobile-big){
             left: 5%;
+            top: 30%;
         }
     }
 </style>
