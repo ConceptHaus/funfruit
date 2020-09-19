@@ -8,42 +8,42 @@ section.snack
     .swiper-container.slidersnack.my-10.sm_my-20
         .swiper-wrapper.py-16
             .swiper-slide.slide
-                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
                     img.mx-auto(src="@/assets/images/products/snack-1.png", alt="alt")
                     h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white MEZCLA DE HIGOS Y NUECES
                     button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
             .swiper-slide.slide
-                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
                     img.mx-auto(src="@/assets/images/products/snack-2.png", alt="alt")
                     h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white MEZCLA DE FRUTOS Y NUECES 
                     button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
             .swiper-slide.slide
-                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
                     img.mx-auto(src="@/assets/images/products/snack-3.png", alt="alt")
                     h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white NUEZ PECANERA EN MITADES
                     button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
             .swiper-slide.slide
-                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
                     img.mx-auto(src="@/assets/images/products/snack-4.png", alt="alt")
                     h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white NUEZ DE LA INDIA SALADA Y TOSTADA
                     button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
             .swiper-slide.slide
-                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
                     img.mx-auto(src="@/assets/images/products/snack-5.png", alt="alt")
                     h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white NUEZ PECANERA CON CHIPOTLE
                     button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
             .swiper-slide.slide
-                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
                     img.mx-auto(src="@/assets/images/products/snack-6.png", alt="alt")
                     h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white PISTACHE SALADO Y TOSTADO
                     button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
             .swiper-slide.slide
-                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
                     img.mx-auto(src="@/assets/images/products/snack-7.png", alt="alt")
                     h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white SPICY FRUIT MIX
                     button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
             .swiper-slide.slide
-                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
                     img.mx-auto(src="@/assets/images/products/snack-8.png", alt="alt")
                     h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white SPICY TRAIL MIX
                     button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
@@ -103,7 +103,7 @@ export default {
                 breakpoints:{
                     320:{
                         slidesPerView:1,
-                        spaceBetween:0
+                        spaceBetween:20
                     },
                     1200:{
                         slidesPerView:4,
@@ -131,6 +131,9 @@ export default {
         button{
             transition: all .2s ease; 
             opacity: 0;
+            @include down-screen(mobile-big){
+                opacity: 1;
+            }
         }
         &:hover{
             button{

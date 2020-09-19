@@ -3,8 +3,8 @@
         .flex.flex-col.sm_flex-row.justify-around
             .block
                 h3.text-ui-light.text-center Certificaciones
-                g-image.object-fit.mx-auto.m-5(src="@/assets/images/cert1.svg")
-                g-image.object-fit.mx-auto.m-5(src="@/assets/images/cert2.svg")
+                g-image.object-contain.mx-auto.m-5(src="@/assets/images/cert1.svg")
+                g-image.object-contain.mx-auto.m-5(src="@/assets/images/cert2.svg")
             .block
                 h1.text-ui-light.text-center FUNFRUIT EN TU BANDEJA DE ENTRADA
                 p.my-5.text-ui-light.text-center Regístrate para recibir ofertas y nuevo contenido de FUNFRUIT.

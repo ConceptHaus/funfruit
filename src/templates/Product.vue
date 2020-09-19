@@ -3,7 +3,7 @@
         .container.my-8
             .flex.justify-around.flex-col(class="sm_flex-row")
                 .block
-                    g-image.object-fit(:src="$context.images", alt="alt")
+                    g-image.object-contain(:src="$context.images", alt="alt")
                 .block.w-full(class="sm_w-2/5")
                     .bg-ui-green.pb-4.pt-12.px-4.sm_px-16
                         h2.product__title.text-white.text-3xl {{$context.title}}
@@ -33,8 +33,8 @@
                                     li.text-white {{$context.info[6]}}
                                     li.text-white {{$context.info[7]}}
                         .border-solid.border.border-white.my-4
-                        button.btn-amazon.block.my-4.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-fit.align-bottom(src="@/assets/images/amazon-logo.svg")]
-                    .text-ui-typo.mt-4 *Este producto puede también comercializarse en empaque colectivo con los otros sabores de la línea Snack Mix (Piña, Kiwi o Papaya)
+                        button.btn-amazon.block.my-4.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-contain.align-bottom(src="@/assets/images/amazon-logo.svg")]
+                    .text-ui-typo.mt-4(v-if="$context.id<7") *Este producto puede también comercializarse en empaque colectivo con los otros sabores de la línea Snack Mix (Piña, Kiwi o Papaya)
             .border-solid.border.border-gray-400.my-4
             .flex.justify-center
                 //- h2.text-ui-gray.text-3xl PRUEBA OTROS DE NUESTROS PRODUCTOS
