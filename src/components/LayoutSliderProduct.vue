@@ -162,8 +162,8 @@ export default {
             background: #BDBDBD;
             opacity: 0.55;
             @include down-screen(mobile-big){
-                padding: 0.5rem 1rem;
-                font-size: 2rem;
+                padding: 0.5rem 0.8rem;
+                font-size: 1.3rem;
             }
         }
     }
