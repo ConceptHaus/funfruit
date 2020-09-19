@@ -14,9 +14,22 @@ module.exports = function (api) {
     const categories = actions.addCollection('Category')
     collection.addReference('id_category','Category')
     categories.addNode({
-      id:'1',
-      title:'THE NUT HOUSE',
-      slug:'nut-house'
+        id:'1',
+        title:'THE NUT HOUSE',
+        description:[],
+        slug:'nut-house'
+      })
+    categories.addNode({
+        id:'2',
+        title:'GRANEL',
+        description:['Una gran variedad de frutos y semillas listos para disfrutar.','Nuestros productos a granel están cuidadosamente seleccionados para ofrecerte sólo lo mejor. '],
+        slug:'granel'
+    })
+    categories.addNode({
+        id:'3',
+        title:'FUNFRUIT',
+        description:['Las mejores opciones naturales son Fun Fruit.','Nuestros productos son una opción más para tener una gran alimentación.'],
+        slug:'funfruit'
     })
     
     for(const product of Products){
@@ -30,7 +43,7 @@ module.exports = function (api) {
         info: product.info,
         images: require.resolve(product.images),
         link: product.link,
-        id_category:product.id_category
+        id_category: product.id_category
       })
     }
   })
@@ -59,28 +72,16 @@ module.exports = function (api) {
         component:'./src/templates/Product.vue',
         context:{
           id:node.id,
+          categorySlug:node.categorySlug,
           title:node.title,
           description:node.description,
           info: node.info,
           images: node.images,
-          link:node.link
+          link:node.link,
+          id_category:node.id_category
         }
       })
     })
-
-    // data.allProducts.edges.forEach(({node})=>{
-    //   createPage({
-    //     path:`/category/${node.categorySlug}`,
-    //     component:'./src/templates/Category.vue',
-    //     context:{
-    //       id:node.id,
-    //       title:node.title,
-    //       images:node.images,
-    //       link:node.link
-    //     }
-    //   })
-    // })
-    
   })
 
 }

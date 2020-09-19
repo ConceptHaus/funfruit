@@ -97,6 +97,10 @@ export default [
     component: c1
   },
   {
+    path: "/granel/uva-pasa-selecta/",
+    component: c1
+  },
+  {
     path: "/nut-house/mango-enchilado-1/",
     component: c1
   },
@@ -105,7 +109,87 @@ export default [
     component: c1
   },
   {
+    path: "/funfruit/uva-pasa/",
+    component: c1
+  },
+  {
+    path: "/granel/semilla-girasol/",
+    component: c1
+  },
+  {
+    path: "/granel/nuez-pecanera-chico/",
+    component: c1
+  },
+  {
+    path: "/granel/nuez-pecanera-mitades/",
+    component: c1
+  },
+  {
+    path: "/granel/mini-gragea-blanca/",
+    component: c1
+  },
+  {
+    path: "/granel/mix-saludable-1/",
+    component: c1
+  },
+  {
+    path: "/granel/mix-saludable-2/",
+    component: c1
+  },
+  {
+    path: "/granel/mix-frutas/",
+    component: c1
+  },
+  {
+    path: "/granel/mix-relleno/",
+    component: c1
+  },
+  {
     path: "/nut-house/almendra-entera/",
+    component: c1
+  },
+  {
+    path: "/funfruit/funfruit-nuez-pecanera-mitades/",
+    component: c1
+  },
+  {
+    path: "/granel/granillo-multicolor/",
+    component: c1
+  },
+  {
+    path: "/funfruit/funfruit-almendra-fileteada/",
+    component: c1
+  },
+  {
+    path: "/funfruit/funfruit-arandano-deshidratado/",
+    component: c1
+  },
+  {
+    path: "/funfruit/ciruela-pasa-sin-hueso/",
+    component: c1
+  },
+  {
+    path: "/granel/coco-rallado/",
+    component: c1
+  },
+  {
+    path: "/granel/ajonjoli-blanco/",
+    component: c1
+  },
+  {
+    path: "/granel/almendra-fileteada/",
+    component: c1
+  },
+  {
+    path: "/granel/arandano-deshidratado/",
+    component: c1
+  },
+  {
+    path: "/granel/avellana-descascarada/",
+    component: c1
+  },
+  {
+    path: "/funfruit/almendra-entera/",
     component: c1
   },
   {

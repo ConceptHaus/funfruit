@@ -7,8 +7,8 @@
                 .flex.flex-col.sm_flex-row.justify-around
                     .block.w-full(class="sm_w-1/3")
                         h2.text-4xl.text-ui-gray {{$page.category.title}}
-                        p.text-xl.text-ui-typo Deliciosa línea premium de semillas y frutas secas empacadas, bajas en calorías y sin sal.
-                        p.text-xl.text-ui-typo.my-3 #[b Sabías que...] Además de ser riquísimos, los frutos secos ayudan a reducir los niveles de colesterol, a perder peso y a prevenir el deterioro cognitivo. ¡Se volverán tus favoritos!
+                        p.text-xl.text-ui-typo {{$page.category.description[0]}}
+                        p.text-xl.text-ui-typo.my-3 #[b Sabías que...] {{$page.category.description[1]}}
                     .block.w-full(class="sm_w-2/3")
                         .flex.flex-col
                             .flex.justify-around.sm_justify-around.flex-row.flex-wrap
@@ -21,6 +21,7 @@
 query($id: ID!){
     category(id:$id){
         title
+        description
         slug
         belongsTo(sortBy:"id", order:ASC){
             edges{
