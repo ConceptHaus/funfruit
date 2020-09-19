@@ -16,7 +16,7 @@ module.exports = function (api) {
     categories.addNode({
         id:'1',
         title:'THE NUT HOUSE',
-        description:[],
+        description:['Deliciosa línea premium de semillas y frutas secas empacadas, bajas en calorías y sin sal.','Además de ser riquísimos, los frutos secos ayudan a reducir los niveles de colesterol, a perder peso y a prevenir el deterioro cognitivo. ¡Se volverán tus favoritos! '],
         slug:'nut-house'
       })
     categories.addNode({
