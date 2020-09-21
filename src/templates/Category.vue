@@ -2,11 +2,11 @@
     Layout
         section
             .container.my-16
-                .flex.justify-between.my-12
-                    h2.text-3xl.text-ui-gray.my-12.text-center TODOS LOS PRODUCTOS
-                    .filter.my-12.flex.justify-around.items-center(class="w-1/3")
-                        p.font-bold.text-ui-typo.text-xl {{productFilter.length}} artículos
-                        select(class="w-2/3" v-model="selectedType" ).block.appereance-none.bg-gray-200.border.border-gray-200.text-gray-700.py-3.px-4.pr-8.rounded.leading-tight.focus_outline-none.focus_bg-white.focus_border-gray-500
+                .flex.flex-col.sm_flex-row.justify-between.my-12
+                    h2.text-3xl.text-ui-gray.sm_my-10.my-0.text-center TODOS LOS PRODUCTOS
+                    .filter.my-12.flex.justify-around.items-center.w-full.flex-col.sm_flex-row(class="sm_w-1/3")
+                        p.font-bold.text-ui-typo.sm_text-xl.mb-6.sm_mb-0.text-2xl {{productFilter.length}} artículos
+                        select(class="sm_w-2/3" v-model="selectedType" ).w-full.block.appereance-none.bg-gray-200.border.border-gray-200.text-gray-700.py-3.px-4.pr-8.rounded.leading-tight.focus_outline-none.focus_bg-white.focus_border-gray-500
                             option(:value="allProducts") Todos
                             option(v-for="(item,index) in $page.category.filter" :key="index" :value="item") {{item}}
                 .flex.flex-col.sm_flex-row.justify-around
