@@ -8,30 +8,58 @@
                 img(src="@/assets/images/nuthouse-menu.png", alt="alt")
                 .hero-menu--list.flex.justify-center.items-center
                     ul
-                        li.mb-4.text-lg 
-                            a.font-bold(href="#") Doy Pack
+                        li.mb-4.text-lg.font-bold Doy Pack
                         li.text-lg
-                            a(href="#") Variedades
+                            a(href="/category/nut-house") Variedades
                 .hero-menu--list.flex.justify-center.items-center
                     ul
-                        li.mb-4.text-lg 
-                            a.font-bold(href="#") Snack
+                        li.mb-4.text-lg.font-bold Snack
                         li.text-lg 
-                            a(href="#") Frutas secas
+                            a(href="/category/nut-house") Frutas secas
                 .hero-menu--list.flex.justify-center.items-center
                     ul
-                        li.mb-4.text-lg 
-                            a.font-bold(href="#") Vitrolero
+                        li.mb-4.text-lg.font-bold Vitrolero 
                         li.text-lg 
-                            a(href="#") Variedades de nueces
+                            a(href="/category/nut-house") Variedades de nueces
                 .flex.flex-col.justify-center
-                    button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
+                    g-link(to="/category/nut-house")
+                        button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
         .element(@click="hideMenu")
             g-link.hover_text-ui-green.hover_font-bold(to="/category/funfruit") Fun Fruit
             img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
+            .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-8.left-0
+                img(src="@/assets/images/funfruit-menu.jpg", alt="alt")
+                .hero-menu--list.flex.justify-center.items-center
+                    ul
+                        li.text-lg
+                            a(href="/category/funfruit") Abarrotes
+                .hero-menu--list.flex.justify-center.items-center
+                    ul
+                        li.text-lg 
+                            a(href="/category/funfruit") Fruta en almíbar
+                .flex.flex-col.justify-center
+                    g-link(to="/category/funfruit")
+                        button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
         .element(@click="hideMenu")
             g-link.hover_text-ui-green.hover_font-bold(to="/category/granel") Productos a granel
             img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
+            .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-8.left-0
+                img(src="@/assets/images/funfruit-menu.jpg", alt="alt")
+                .hero-menu--list.flex.justify-center.items-center
+                    ul
+                        li.text-lg
+                            a(href="/category/granel") Frutos secos
+                .hero-menu--list.flex.justify-center.items-center
+                    ul
+                        li.text-lg 
+                            a(href="/category/granel") Fruta deshidratada
+                .hero-menu--list.flex.justify-center.items-center
+                    ul
+                        li.text-lg 
+                            a(href="/category/granel") Nueces y semillas
+                .flex.flex-col.justify-center
+                    g-link(to="/category/granel")
+                        button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
         .element
             g-link.hover_text-ui-green.hover_font-bold(to="/") Acerca de Fun Fruit
             img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
@@ -54,11 +82,14 @@ export default {
     },
     methods:{
         hideMenu(){
-            var btn = document.getElementById('menuBtn');
-            btn.classList.remove('open')
-            var tl = gsap.timeline()
-            tl.to('#menu', 0.2,{height:"0",ease: "Power3.easeOut"})
-            tl.set('#menu',{display:'none'})
+            const breakpoint = window.matchMedia('(max-width: 640px)');
+            if(breakpoint.matches === true){
+                var btn = document.getElementById('menuBtn');
+                btn.classList.remove('open')
+                var tl = gsap.timeline()
+                tl.to('#menu', 0.2,{height:"0",ease: "Power3.easeOut"})
+                tl.set('#menu',{display:'none'})
+            }
         }
     }
 }

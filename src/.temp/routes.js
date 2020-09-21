@@ -117,6 +117,14 @@ export default [
     component: c1
   },
   {
+    path: "/funfruit/pina-rebanada-indonesia/",
+    component: c1
+  },
+  {
+    path: "/funfruit/pina-rebanada/",
+    component: c1
+  },
+  {
     path: "/granel/nuez-pecanera-chico/",
     component: c1
   },
@@ -145,11 +153,11 @@ export default [
     component: c1
   },
   {
-    path: "/nut-house/almendra-entera/",
+    path: "/funfruit/mangos-reabandos/",
     component: c1
   },
   {
-    path: "/funfruit/funfruit-nuez-pecanera-mitades/",
+    path: "/nut-house/almendra-entera/",
     component: c1
   },
   {
@@ -165,11 +173,31 @@ export default [
     component: c1
   },
   {
+    path: "/funfruit/fresas-marrasquino/",
+    component: c1
+  },
+  {
     path: "/funfruit/ciruela-pasa-sin-hueso/",
     component: c1
   },
   {
+    path: "/funfruit/duraznos-cubos/",
+    component: c1
+  },
+  {
+    path: "/funfruit/duraznos-mitades/",
+    component: c1
+  },
+  {
     path: "/granel/coco-rallado/",
+    component: c1
+  },
+  {
+    path: "/funfruit/cereza-290/",
+    component: c1
+  },
+  {
+    path: "/funfruit/cereza-470/",
     component: c1
   },
   {

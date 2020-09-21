@@ -16,18 +16,21 @@ module.exports = function (api) {
     categories.addNode({
         id:'1',
         title:'THE NUT HOUSE',
+        filter:['Doy Pack','Vitroleros','Snack'],
         description:['Deliciosa línea premium de semillas y frutas secas empacadas, bajas en calorías y sin sal.','Además de ser riquísimos, los frutos secos ayudan a reducir los niveles de colesterol, a perder peso y a prevenir el deterioro cognitivo. ¡Se volverán tus favoritos! '],
         slug:'nut-house'
       })
     categories.addNode({
         id:'2',
         title:'GRANEL',
+        filter:['Frutos secos','Fruta deshidratada','Nueces y semillas'],
         description:['Una gran variedad de frutos y semillas listos para disfrutar.','Nuestros productos a granel están cuidadosamente seleccionados para ofrecerte sólo lo mejor. '],
         slug:'granel'
     })
     categories.addNode({
         id:'3',
         title:'FUNFRUIT',
+        filter:['Abarrotes','Fruta en almíbar'],
         description:['Las mejores opciones naturales son Fun Fruit.','Nuestros productos son una opción más para tener una gran alimentación.'],
         slug:'funfruit'
     })
@@ -43,6 +46,7 @@ module.exports = function (api) {
         info: product.info,
         images: require.resolve(product.images),
         link: product.link,
+        type:product.type,
         id_category: product.id_category
       })
     }
@@ -62,6 +66,7 @@ module.exports = function (api) {
               info
               images
               link
+              type
             }
           }
         }
