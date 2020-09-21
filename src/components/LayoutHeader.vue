@@ -1,15 +1,14 @@
 <template lang="pug">
-    .flex.flex-col.justify-start
-        header.top-0.w-full.bg-ui-background
-            LayoutBanner
-            #header
-                .flex.items-center.justify-around.sm_justify-center.p-6
-                    g-link(to="/")
-                        g-image.logo.flex.items-center(src="@/assets/images/logo.svg")
-                    button#menuBtn.hamburguer.block.focus_outline-one.sm_hidden.block(type="button" @click="navToggle")
-                        span.hamburger__top-bun.bg-ui-navy
-                        span.hamburger__bottom-bun.bg-ui-navy
-            LayoutMenu
+    header.top-0.w-full.bg-ui-background.z-10.sticky
+        LayoutBanner
+        #header
+            .flex.items-center.justify-around.sm_justify-center.p-6
+                g-link(to="/")
+                    g-image.logo.flex.items-center(src="@/assets/images/logo.svg")
+                button#menuBtn.hamburguer.block.focus_outline-one.sm_hidden.block(type="button" @click="navToggle")
+                    span.hamburger__top-bun.bg-ui-navy
+                    span.hamburger__bottom-bun.bg-ui-navy
+        LayoutMenu
             
 </template>
 <script>
@@ -20,6 +19,13 @@ export default {
     components:{
         LayoutBanner,
         LayoutMenu
+    },
+    mounted(){
+        window.addEventListener('scroll',function(){
+            if(window.scrollY>=50){
+                console.log('scroll')
+            }
+        })
     },
     methods:{
         navToggle(){

@@ -3,7 +3,7 @@
     .flex.w-full.items-center.justify-around.p-4.flex-wrap.flex-col(class="sm_flex-row")
         .element(@click="animationMenu")
             g-link.hover_text-ui-green.hover_font-bold.mt-4(to="/category/nut-house") The Nut House
-            img.active-shape.ml-auto.mb-4(src="@/assets/images/active-shape.svg", alt="alt")
+            img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
             .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-8.left-0
                 img(src="@/assets/images/nuthouse-menu.png", alt="alt")
                 .hero-menu--list.flex.justify-center.items-center
@@ -28,16 +28,16 @@
                     button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
         .element
             g-link.hover_text-ui-green.hover_font-bold(to="/category/funfruit") Fun Fruit
-            img.active-shape.ml-auto.mb-4(src="@/assets/images/active-shape.svg", alt="alt")
+            img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
         .element
             g-link.hover_text-ui-green.hover_font-bold(to="/category/granel") Productos a granel
-            img.active-shape.ml-auto.mb-4(src="@/assets/images/active-shape.svg", alt="alt")
+            img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
         .element
             g-link.hover_text-ui-green.hover_font-bold(to="/") Acerca de Fun Fruit
-            img.active-shape.ml-auto.mb-4(src="@/assets/images/active-shape.svg", alt="alt")
+            img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
         .element
             g-link.hover_text-ui-green.hover_font-bold(to="/") Fundación
-            img.active-shape.ml-auto.mb-4(src="@/assets/images/active-shape.svg", alt="alt")
+            img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
 
 </template>
 <script>
@@ -62,7 +62,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .menu{
-    display: none;
+    @include down-screen(mobile-big){
+        display: none;
+    }
     transition: height 0.2s ease;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     .element{
