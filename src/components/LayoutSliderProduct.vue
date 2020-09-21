@@ -115,8 +115,16 @@ export default {
                         slidesPerView:1,
                         spaceBetween:0
                     },
-                    1200:{
+                    720:{
+                        slidesPerView:4,
+                        spaceBetween:0
+                    },
+                    1025:{
                         slidesPerView:5,
+                        spaceBetween:0
+                    },
+                    1444:{
+                        slidesPerView:6,
                         spaceBetween:0
                     }
                 }
@@ -129,6 +137,7 @@ export default {
     .slide{
         transition: .2s all ease;
         cursor: pointer;
+        position: relative;
         h2{
             min-height: 60px;
         }

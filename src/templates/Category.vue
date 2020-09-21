@@ -13,9 +13,10 @@
                         .flex.flex-col
                             .flex.justify-around.sm_justify-around.flex-row.flex-wrap
                                 .product.w-full.block.my-4(class="md_w-1/3", v-for="edge in $page.category.belongsTo.edges" :key="edge.node.id")
-                                    g-image.product__image.object-contain.mx-auto(:src="edge.node.images" :alt="edge.node.title")
-                                    p.text-center.text-lg {{edge.node.title}} #[a(:href="`/${edge.node.categorySlug}/${edge.node.slug}`") #[img.inline.ml-2(src="@/assets/images/detail.svg", alt="alt")]]
-                                    button.btn-amazon.block.my-4.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-contain.align-bottom(src="@/assets/images/amazon-logo.svg")]
+                                    g-link(:to="`/${edge.node.categorySlug}/${edge.node.slug}`")
+                                        g-image.product__image.object-contain.mx-auto(:src="edge.node.images" :alt="edge.node.title")
+                                        p.text-center.text-lg {{edge.node.title}} #[a(:href="`/${edge.node.categorySlug}/${edge.node.slug}`") #[img.inline.ml-2(src="@/assets/images/detail.svg", alt="alt")]]
+                                        button.btn-amazon.block.my-4.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-contain.align-bottom(src="@/assets/images/amazon-logo.svg")]
 </template>
 <page-query>
 query($id: ID!){
@@ -52,7 +53,7 @@ export default {
             border-radius: 12px;
         }
         &__image{
-            min-height: 281px;
+            height: 282px;
         }
     }
 </style>
