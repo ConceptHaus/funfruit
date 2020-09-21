@@ -55,6 +55,8 @@ section.snack
                     h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white SPICY TRAIL MIX
                     g-link(to="/nut-house/spicy-trail-mix")
                         button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
+        .swiper-button-prev.prev-snack
+        .swiper-button-next.next-snack
     .block.text-center.my-20
         h2.text-center.text-3xl.text-ui-navy.my-6 #[span ¿] SE TE ANTOJÓ #[span ?]
         button.text-xl.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-6.rounded Ver todos los productos
@@ -101,12 +103,12 @@ export default {
                 effect:'slide',
                 autoplay:true,
                 loop:true,
-                speed:1200,
+                speed:600,
                 slidesPerView:4,
                 autoHeight: true,
                 navigation:{
-                    nextEl:'.products-next',
-                    prevEl:'.products-prev'
+                    nextEl:'.prev-snack',
+                    prevEl:'.next-snack'
                 },
                 breakpoints:{
                     320:{
@@ -130,6 +132,9 @@ export default {
         transition: all .4s ease;
         padding:1rem 0;
         min-height: 492px;
+        @include down-screen(mobile-big){
+            margin: 0 1.5rem;
+        }
         .snack__card--title{
             transition: all .2s ease;     
         }
@@ -151,6 +156,15 @@ export default {
                 transform: translateY(-10px);
             }
         }
+    }
+    .swiper-button-prev, .swiper-button-next{
+        color: #FFF !important;
+    }
+    .swiper-button-prev{
+        left: 25px;
+    }
+    .swiper-button-next{
+        right: 25px;
     }
     h2{
         span{

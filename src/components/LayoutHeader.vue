@@ -21,16 +21,10 @@ export default {
         LayoutMenu
     },
     mounted(){
-        window.addEventListener('scroll',function(){
-            if(window.scrollY>=50){
-                console.log('scroll')
-            }
-        })
     },
     methods:{
         navToggle(){
             var btn = document.getElementById('menuBtn');
-            var nav = document.getElementById('menu');
             var tl = gsap.timeline()
             btn.classList.toggle('open');
             if(!btn.classList.contains('open')){
@@ -39,7 +33,7 @@ export default {
             }else{
                 tl.set('#menu',{display:'block'})
                 tl.to('#menu', 0.2,{height:"auto",ease: "Power3.easeOut"})
-                tl.from('.menu .flex .element',1.5,{y:-30,alpha:0,stagger:0.25,color:'#225D38', ease:'elastic.out(.8)'})
+                tl.from('.menu .flex .element',1.5,{y:-30,alpha:0,stagger:0.20,color:'#225D38', ease:'elastic.out(.8)'})
             }
         }
     }
