@@ -134,7 +134,7 @@ export default {
     }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
     .slide{
         .snack__button{
             transition: all .2s ease; 
