@@ -7,62 +7,46 @@ section.snack
             p.text-ui-typo Elige el que más se te #[b antoje]
     .swiper-container.slidersnack
         .swiper-wrapper
-            .swiper-slide.slide
-                g-link(to="/nut-house/mezcla-de-higo-y-nueces")
-                    .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
-                        img.mx-auto(src="@/assets/images/products/snack-1.png", alt="alt")
-                        h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white MEZCLA DE HIGOS Y NUECES
-                    g-link(to="/nut-house/mezcla-de-higo-y-nueces")
-                        button.snack__button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
-            .swiper-slide.slide
-                g-link(to="/nut-house/mezcla-de-frutos-y-nueces")
-                    .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
-                        img.mx-auto(src="@/assets/images/products/snack-2.png", alt="alt")
-                        h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white MEZCLA DE FRUTOS Y NUECES 
-                    g-link(to="/nut-house/mezcla-de-frutos-y-nueces")
-                        button.snack__button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
-            .swiper-slide.slide
-                g-link(to="/nut-house/nuez-pecanera-en-mitades")
-                    .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
-                        img.mx-auto(src="@/assets/images/products/snack-3.png", alt="alt")
-                        h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white NUEZ PECANERA EN MITADES
-                    g-link(to="/nut-house/nuez-pecanera-en-mitades")
-                        button.snack__button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
-            .swiper-slide.slide
-                g-link(to="/nut-house/nuez-de-la-india-1")
-                    .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
-                        img.mx-auto(src="@/assets/images/products/snack-4.png", alt="alt")
-                        h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white NUEZ DE LA INDIA SALADA Y TOSTADA
-                    g-link(to="/nut-house/nuez-de-la-india-1")
-                        button.snack__button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
-            .swiper-slide.slide
-                g-link(to="/nut-house/nuez-pecanera-chipotle")
-                    .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
-                        img.mx-auto(src="@/assets/images/products/snack-5.png", alt="alt")
-                        h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white NUEZ PECANERA CON CHIPOTLE
-                    g-link(to="/nut-house/nuez-pecanera-chipotle")
-                        button.snack__button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
-            .swiper-slide.slide
-                g-link(to="/nut-house/pistache-salado-tostado-2")
-                    .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
-                        img.mx-auto(src="@/assets/images/products/snack-6.png", alt="alt")
-                        h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white PISTACHE SALADO Y TOSTADO
-                    g-link(to="/nut-house/pistache-salado-tostado-2")
-                        button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
-            .swiper-slide.slide
-                g-link(to="/nut-house/spicy-fruit-mix")
-                    .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
-                        img.mx-auto(src="@/assets/images/products/snack-7.png", alt="alt")
-                        h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white SPICY FRUIT MIX
-                    g-link(to="/nut-house/spicy-fruit-mix")
-                        button.snack__button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
-            .swiper-slide.slide
-                g-link(to="/nut-house/spicy-trail-mix")
-                    .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
-                        img.mx-auto(src="@/assets/images/products/snack-8.png", alt="alt")
-                        h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white SPICY TRAIL MIX
-                    g-link(to="/nut-house/spicy-trail-mix")
-                        button.snack__button.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
+            .swiper-slide.slide.text-center
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
+                    img.mx-auto(src="@/assets/images/products/snack-1.png", alt="alt")
+                    h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white MEZCLA DE HIGOS Y NUECES
+                g-link(to="/nut-house/mezcla-de-higo-y-nueces").inline-block.snack__button.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
+            .swiper-slide.slide.text-center
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
+                    img.mx-auto(src="@/assets/images/products/snack-2.png", alt="alt")
+                    h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white MEZCLA DE FRUTOS Y NUECES 
+                g-link(to="/nut-house/mezcla-de-frutos-y-nueces").inline-block.snack__button.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
+            .swiper-slide.slide.text-center
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
+                    img.mx-auto(src="@/assets/images/products/snack-3.png", alt="alt")
+                    h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white NUEZ PECANERA EN MITADES
+                g-link(to="/nut-house/nuez-pecanera-en-mitades").inline-block.snack__button.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
+            .swiper-slide.slide.text-center
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
+                    img.mx-auto(src="@/assets/images/products/snack-4.png", alt="alt")
+                    h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white NUEZ DE LA INDIA SALADA Y TOSTADA
+                g-link(to="/nut-house/nuez-de-la-india-1").inline-block.snack__button.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
+            .swiper-slide.slide.text-center
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
+                    img.mx-auto(src="@/assets/images/products/snack-5.png", alt="alt")
+                    h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white NUEZ PECANERA CON CHIPOTLE
+                g-link(to="/nut-house/nuez-pecanera-chipotle").inline-block.snack__button.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
+            .swiper-slide.slide.text-center
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
+                    img.mx-auto(src="@/assets/images/products/snack-6.png", alt="alt")
+                    h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white PISTACHE SALADO Y TOSTADO
+                g-link(to="/nut-house/pistache-salado-tostado-2").inline-block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
+            .swiper-slide.slide.text-center
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
+                    img.mx-auto(src="@/assets/images/products/snack-7.png", alt="alt")
+                    h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white SPICY FRUIT MIX
+                g-link(to="/nut-house/spicy-fruit-mix").inline-block.snack__button.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
+            .swiper-slide.slide.text-center
+                .card.overflow-hidden.shadow-lg.rounded-lg.hover_bg-ui-blue.cursor-pointer.bg-ui-blue.sm_bg-transparent
+                    img.mx-auto(src="@/assets/images/products/snack-8.png", alt="alt")
+                    h2.snack__card--title(class="w-2/3").mx-auto.text-center.font-bold.text-xl.text-white SPICY TRAIL MIX
+                g-link(to="/nut-house/spicy-trail-mix").inline-block.snack__button.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-16.rounded Lo quiero
         .swiper-button-prev.prev-snack
         .swiper-button-next.next-snack
     .block.text-center.mb-20
