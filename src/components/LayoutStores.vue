@@ -6,7 +6,7 @@ section
         .flex.justify-center.my-4
             p.text-ui-typo.text-lg Toda nuestra variedad #[b a tu alcance]
     .swiper-container.sliderstores.my-20
-        .swiper-wrapper.py-6
+        .swiper-wrapper.pb-6
             .swiper-slide.slide__store
                 .card.overflow-hidden.shadow-lg.mb-8.sm_mb-0
                     img.px-16.py-10.mx-auto(src="@/assets/images/walmart.svg", alt="alt")

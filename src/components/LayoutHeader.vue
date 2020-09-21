@@ -5,7 +5,7 @@
             .flex.items-center.justify-around.sm_justify-center.p-6
                 g-link(to="/")
                     g-image.logo.flex.items-center(src="@/assets/images/logo.svg")
-                button#menuBtn.hamburguer.block.focus_outline-one.sm_hidden.block(type="button" @click="navToggle")
+                button#menuBtn.hamburger.relative.sm_hidden.block(type="button" @click="navToggle")
                     span.hamburger__top-bun.bg-ui-navy
                     span.hamburger__bottom-bun.bg-ui-navy
         LayoutMenu
