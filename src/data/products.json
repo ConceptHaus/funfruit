@@ -613,6 +613,19 @@
     },
     {
         "id":48,
+        "slug":"cereza-con-470",
+        "categorySlug":"funfruit",
+        "category":"Funfruit",
+        "title":"Cerezas con tallo tipo Marrasquino",
+        "description":"",
+        "info":["470 g"],
+        "images":"./src/assets/images/products/cereza-con-470.jpg",
+        "link":"",
+        "type":"Fruta en almíbar",
+        "id_category":3
+    },
+    {
+        "id":49,
         "slug":"cereza-470",
         "categorySlug":"funfruit",
         "category":"Funfruit",
@@ -625,7 +638,7 @@
         "id_category":3
     },
     {
-        "id":49,
+        "id":50,
         "slug":"cereza-290",
         "categorySlug":"funfruit",
         "category":"Funfruit",
@@ -638,7 +651,7 @@
         "id_category":3
     },
     {
-        "id":50,
+        "id":51,
         "slug":"duraznos-cubos",
         "categorySlug":"funfruit",
         "category":"Funfruit",
@@ -651,7 +664,7 @@
         "id_category":3
     },
     {
-        "id":51,
+        "id":52,
         "slug":"duraznos-mitades",
         "categorySlug":"funfruit",
         "category":"Funfruit",
@@ -664,7 +677,7 @@
         "id_category":3
     },
     {
-        "id":52,
+        "id":53,
         "slug":"fresas-marrasquino",
         "categorySlug":"funfruit",
         "category":"Funfruit",
@@ -677,7 +690,7 @@
         "id_category":3
     },
     {
-        "id":53,
+        "id":54,
         "slug":"mangos-reabandos",
         "categorySlug":"funfruit",
         "category":"Funfruit",
@@ -690,7 +703,7 @@
         "id_category":3
     },
     {
-        "id":54,
+        "id":55,
         "slug":"pina-rebanada",
         "categorySlug":"funfruit",
         "category":"Funfruit",
@@ -703,7 +716,7 @@
         "id_category":3
     },
     {
-        "id":55,
+        "id":56,
         "slug":"pina-rebanada-indonesia",
         "categorySlug":"funfruit",
         "category":"Funfruit",

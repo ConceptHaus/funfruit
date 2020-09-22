@@ -20,8 +20,8 @@
                                 .product.w-full.block.my-4(class="md_w-1/3", v-for="edge in productFilter" :key="edge.node.id")
                                     a(:href="`/${edge.node.categorySlug}/${edge.node.slug}`")
                                         g-image.product__image.object-contain.mx-auto(:src="edge.node.images" :alt="edge.node.title")
-                                        p.text-center.text-lg {{edge.node.title}} #[a(:href="`/${edge.node.categorySlug}/${edge.node.slug}`") #[img.inline.ml-2(src="@/assets/images/detail.svg", alt="alt")]]
-                                        button.btn-amazon.block.my-4.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-contain.align-bottom(src="@/assets/images/amazon-logo.svg")]
+                                        p.text-center.text-lg.my-4 {{edge.node.title}} #[a(:href="`/${edge.node.categorySlug}/${edge.node.slug}`") #[img.inline.ml-2(src="@/assets/images/detail.svg", alt="alt")]]
+                                        button(v-if="edge.node.categorySlug === 'nut-house'").btn-amazon.block.my-4.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-contain.align-bottom(src="@/assets/images/amazon-logo.svg")]
 </template>
 <page-query>
 query($id: ID!){

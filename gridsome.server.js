@@ -17,7 +17,7 @@ module.exports = function (api) {
         id:'1',
         title:'THE NUT HOUSE',
         filter:['Doy Pack','Vitroleros','Snack'],
-        description:['Deliciosa línea premium de semillas y frutas secas empacadas, bajas en calorías y sin sal.','Además de ser riquísimos, los frutos secos ayudan a reducir los niveles de colesterol, a perder peso y a prevenir el deterioro cognitivo. ¡Se volverán tus favoritos! '],
+        description:['Deliciosa línea premium de semillas y frutas secas empacadas, bajas en calorías.','Además de ser riquísimos, los frutos secos ayudan a reducir los niveles de colesterol, a perder peso y a prevenir el deterioro cognitivo. ¡Se volverán tus favoritos! '],
         slug:'nut-house'
       })
     categories.addNode({
@@ -77,12 +77,15 @@ module.exports = function (api) {
         component:'./src/templates/Product.vue',
         context:{
           id:node.id,
+          slug:node.slug,
           categorySlug:node.categorySlug,
+          category:node.category,
           title:node.title,
           description:node.description,
           info: node.info,
           images: node.images,
           link:node.link,
+          type:node.type,
           id_category:node.id_category
         }
       })
