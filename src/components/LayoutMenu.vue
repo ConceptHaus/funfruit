@@ -8,19 +8,16 @@
                 img(src="@/assets/images/nuthouse-menu.png", alt="alt")
                 .hero-menu--list.flex.justify-center.items-center
                     ul
-                        li.mb-4.text-lg.font-bold Doy Pack
                         li.text-lg
-                            a(href="/category/nut-house") Variedades
+                            a(href="/category/nut-house") Doy Pack
                 .hero-menu--list.flex.justify-center.items-center
                     ul
-                        li.mb-4.text-lg.font-bold Snack
                         li.text-lg 
-                            a(href="/category/nut-house") Frutas secas
+                            a(href="/category/nut-house") Snack
                 .hero-menu--list.flex.justify-center.items-center
                     ul
-                        li.mb-4.text-lg.font-bold Vitrolero 
                         li.text-lg 
-                            a(href="/category/nut-house") Variedades de nueces
+                            a(href="/category/nut-house") Vitrolero
                 .flex.flex-col.justify-center
                     g-link(to="/category/nut-house")
                         button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
