@@ -49,17 +49,35 @@ query($id: ID!){
 }
 </page-query>
 <script>
+
 export default {
     data(){
         return{
-            allProducts: '',
-            selectedType : ''
+            allProducts: 'all',
+            selectedType : null,
+            prevSelected:''
+        }
+    },
+    mounted(){
+        if(this.$store.state.link){
+            this.prevSelected = this.$store.state.link
+            this.selectedType = this.prevSelected
+        }else{
+            this.selectedType = this.allProducts
+        }
+    },
+    updated(){
+        console.log(this.$store.state.link,this.prevSelected)
+        if(this.prevSelected != this.$store.state.link){
+            this.prevSelected = this.$store.state.link
+            this.selectedType = this.prevSelected
         }
     },
     computed:{
+        
         productFilter(){
             var self = this
-            if(self.selectedType != ''){
+            if(self.selectedType != 'all'){
                 var listFiltered = self.$page.category.belongsTo.edges.filter(function(product){
                     return product.node.type === self.selectedType
                 })
