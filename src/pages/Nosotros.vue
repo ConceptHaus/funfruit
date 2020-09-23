@@ -2,7 +2,7 @@
     Layout
         .nosotros__hero.flex.justify-center.items-center.bg-ui-navy
             img.object-contain(src="@/assets/images/logo_funfruit.svg", alt="alt")
-        .nosotros__desc.flex.flex-col.sm_flex-rowjustify-center.items-center.mb-4
+        .nosotros__desc.flex.flex-col.sm_flex-row.justify-center.items-center.mb-4
             h2.text-6xl.text-ui-green.mt-10(class="sm_w-1/3").text-center QUIÉNES SOMOS
             .nosotros__text.mt-10.sm_mt-20.mx-6(class="sm_w-1/3")
                 p.mb-2 Fun Fruit nace con el nombre de Tepehuana, que hace referencia a la Sierra de Tepehuanes, ubicada al sur de Chihuahua y parte de Durango, lugar de donde es originaria la marca.
