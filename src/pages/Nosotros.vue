@@ -37,7 +37,7 @@ export default {
         &__hero{
             height: 70vh;
             @include down-screen(mobile-big){
-                height: 80vh;
+                height: 90vh;
             }
         }
         &__desc{
