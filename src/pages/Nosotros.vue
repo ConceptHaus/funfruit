@@ -15,15 +15,15 @@
             .card.my-10.p-4.text-center
                 g-image(src="@/assets/images/nut-house-group.png", alt="alt")
                 h2.text-4xl.text-ui-typo.mt-4.text-center NUT HOUSE
-                a(href="/nut-house").inline-block.my-4.bg-ui-blue.text-white.py-3.px-16.rounded Lo quiero
+                a(href="/category/nut-house").inline-block.my-4.bg-ui-blue.text-white.py-3.px-16.rounded Lo quiero
             .card.my-10.p-4.text-center
                 g-image(src="@/assets/images/funfruit-product.png", alt="alt")
                 h2.text-4xl.text-ui-typo.mt-4.text-center FUNFRUIT
-                a(href="/funfruit").inline-block.my-4.bg-ui-blue.text-white.py-3.px-16.rounded Lo quiero
+                a(href="/category/funfruit").inline-block.my-4.bg-ui-blue.text-white.py-3.px-16.rounded Lo quiero
             .card.my-10.p-4.text-center
                 g-image(src="@/assets/images/granel-product.png", alt="alt")
                 h2.text-4xl.text-ui-typo.mt-4.text-center A GRANEL
-                a(href="/granel").inline-block.my-4.bg-ui-blue.text-white.py-3.px-16.rounded Lo quiero
+                a(href="/category/granel").inline-block.my-4.bg-ui-blue.text-white.py-3.px-16.rounded Lo quiero
 
 
 </template>
