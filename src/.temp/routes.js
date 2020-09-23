@@ -1,7 +1,8 @@
 const c1 = () => import(/* webpackChunkName: "page--src--templates--product-vue" */ "/Users/sergioramos/Development/Projects/fun-fruit/src/templates/Product.vue")
 const c2 = () => import(/* webpackChunkName: "page--src--templates--category-vue" */ "/Users/sergioramos/Development/Projects/fun-fruit/src/templates/Category.vue")
-const c3 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/sergioramos/Development/Projects/fun-fruit/node_modules/gridsome/app/pages/404.vue")
-const c4 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/sergioramos/Development/Projects/fun-fruit/src/pages/Index.vue")
+const c3 = () => import(/* webpackChunkName: "page--src--pages--nosotros-vue" */ "/Users/sergioramos/Development/Projects/fun-fruit/src/pages/Nosotros.vue")
+const c4 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/sergioramos/Development/Projects/fun-fruit/node_modules/gridsome/app/pages/404.vue")
+const c5 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/sergioramos/Development/Projects/fun-fruit/src/pages/Index.vue")
 
 export default [
   {
@@ -229,18 +230,22 @@ export default [
     component: c2
   },
   {
+    path: "/nosotros/",
+    component: c3
+  },
+  {
     name: "404",
     path: "/404/",
-    component: c3
+    component: c4
   },
   {
     name: "home",
     path: "/",
-    component: c4
+    component: c5
   },
   {
     name: "*",
     path: "*",
-    component: c3
+    component: c4
   }
 ]
