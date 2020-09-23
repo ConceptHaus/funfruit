@@ -12,7 +12,8 @@
     "gridsome-plugin-sass-resources-loader": "^0.0.3",
     "gsap": "./gsap-bonus.tgz",
     "swiper": "^5.4.1",
-    "vue-scrollto": "^2.18.1"
+    "vue-scrollto": "^2.18.1",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^2.2.36",

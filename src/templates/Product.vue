@@ -1,9 +1,8 @@
 <template lang="pug">
     Layout
         .container.my-8
-            .flex.justify-around.flex-col(class="sm_flex-row")
-                .block
-                    g-image.object-contain(:src="$context.images", alt="alt")
+            .flex.justify-around.flex-col.items-center(class="sm_flex-row")
+                g-image.object-contain(:src="$context.images", alt="alt",class="w-1/2")
                 .block.w-full(class="sm_w-2/5")
                     .bg-ui-green.pb-4.pt-12.px-4.sm_px-16
                         h2.product__title.text-white.text-3xl {{$context.title}}
@@ -38,14 +37,13 @@
                     .text-ui-typo.mt-4(v-if="$context.id<7") *Este producto puede también comercializarse en empaque colectivo con los otros sabores de la línea Snack Mix (Piña, Kiwi o Papaya)
             .border-solid.border.border-gray-400.my-4
             .flex.justify-center
-                //- h2.text-ui-gray.text-3xl PRUEBA OTROS DE NUESTROS PRODUCTOS
-            LayoutSliderProduct
+            LayoutSliderRandom
 </template>
 <script>
-import LayoutSliderProduct from "~/components/LayoutSliderProduct"
+import LayoutSliderRandom from "~/components/LayoutSliderRandom"
 export default {
     components:{
-        LayoutSliderProduct
+        LayoutSliderRandom
     }
 }
 </script>

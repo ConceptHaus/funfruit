@@ -181,6 +181,10 @@ export default [
     component: c1
   },
   {
+    path: "/funfruit/cereza-con-470/",
+    component: c1
+  },
+  {
     path: "/funfruit/duraznos-cubos/",
     component: c1
   },
