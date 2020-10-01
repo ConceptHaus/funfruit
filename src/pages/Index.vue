@@ -15,6 +15,7 @@ import LayoutStores from "~/components/LayoutStores"
 import LayoutProducts from "~/components/LayoutProducts"
 
 export default {
+  
   components:{
     LayoutSlider,
     LayoutSliderProduct,
