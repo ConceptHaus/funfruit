@@ -48,7 +48,7 @@ export default {
             var tl = gsap.timeline(), splitText = new SplitText(".swiper-slide-active .slide-title",{type:"words,chars"}), chars=splitText.chars, words=splitText.words
 
             gsap.set(".swiper-slide-active .slide-text .slide-title",{perspective:400})
-            tl.from(chars, {duration: 1, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:"back", stagger: 0.02}, "+=0");
+            tl.from(chars, {delay:1,duration: 1, alpha:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:"back", stagger: 0.02}, "+=0");
             tl.fromTo(".swiper-slide-active .slide-text #shape",{duration:0.5, scale:0, ease:'Circ.easeOut'},{scale:1,y:-10},"-=0.5")
             tl.from(".swiper-slide-active .slide-text .amazon-logo", 0.3, {x:1000, ease:'Power2.easeOut'},"-=0.2")
             tl.fromTo(".swiper-slide-active .slide-text #button-cta", 0.4,{scale:0},{scale:1, ease:"Back.easeOut"},"+=0.3")

@@ -8,6 +8,9 @@ module.exports = {
   siteName: 'FUNFRUIT',
   plugins: [
     {
+      use: 'gridsome-plugin-vue-toasted',
+    },
+    {
       use: 'gridsome-plugin-sass-resources-loader',
       options: {
         resources: '@/assets/sass/app.scss',

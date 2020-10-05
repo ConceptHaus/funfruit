@@ -9,3 +9,12 @@
 .btn-whatsapp{
     background-color: #25D366;
 }
+.toasted-bubble{
+    @include down-screen(mobile-big){
+        width: auto;
+    }
+    max-width: 300px !important;
+    padding: 1.5rem !important;
+    font-size: 1.2rem !important;
+    line-height: 1.3 !important;
+}

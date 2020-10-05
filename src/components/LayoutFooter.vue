@@ -12,9 +12,9 @@
                 .flex.justify-center.flex-col.sm_flex-row.items-center
                     a.m-3.text-ui-light.font-bold(href="") Aviso de privacidad
                     a.m-3.text-ui-light.font-bold(href="") Términos y condiciones
-                    a.m-3.text-ui-light.font-bold(href="") ©FUNFRUIT 2020
+                    a.m-3.text-ui-light.font-bold(href="#") ©FUNFRUIT 2020
             .block
-                h3.text-ui-light.text-center Contáctanos
+                a(href="/contacto").block.text-ui-light.text-center Contáctanos
                 p.text-ui-light.my-5.text-center Únete a nuestro equipo
                 p.text-ui-light.my-5.text-center Blog
                 .flex.justify-center
