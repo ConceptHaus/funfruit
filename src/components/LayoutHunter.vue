@@ -51,15 +51,15 @@
                                 option Vacante X
                                 option Vacante X
                         .w-full.px-3.mb-6
-                            vue-dropzone(id="dropzone" :options="dropzoneOptions")
+                            dropzone(id="dropzone" :options="dropzoneOptions")
             template(v-slot:footer)
                 .flex
                     button(class="w-2/3").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Postularme
 
 </template>
 <script>
-import vue2Dropzone from 'vue2-dropzone'
-import 'vue2-dropzone/dist/vue2Dropzone.min.css'
+import Dropzone from 'nuxt-dropzone'
+import 'nuxt-dropzone/dropzone.css'
 export default {
     data(){
         return{
@@ -73,8 +73,11 @@ export default {
             }
         }
     },
+    mounted(){
+        
+    },
     components:{
-        vueDropzone: vue2Dropzone
+        Dropzone
     }
 }
 </script>

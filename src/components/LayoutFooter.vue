@@ -15,7 +15,7 @@
                     a.m-3.text-ui-light.font-bold(href="#") ©FUNFRUIT 2020
             .block
                 a(href="/contacto").block.text-ui-light.text-center Contáctanos
-                a(href="/bolsa-de-trabajo").text-ui-light.my-5.text-center Únete a nuestro equipo
+                a(href="/bolsa-de-trabajo").block.text-ui-light.my-5.text-center Únete a nuestro equipo
                 p.text-ui-light.my-5.text-center Blog
                 .flex.justify-center
                     img.mx-3(src="@/assets/images/facebook.svg", alt="alt")
