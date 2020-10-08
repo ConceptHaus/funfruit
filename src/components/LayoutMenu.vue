@@ -67,7 +67,7 @@
 </template>
 <script>
 import { gsap } from 'gsap'
-import { bus } from '../lib/event-bus'
+
 export default {
     data(){
         return{
