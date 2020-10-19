@@ -91,5 +91,33 @@ module.exports = function (api) {
       })
     })
   })
-
+  api.createPages(async ({graphql, createPage }) => {
+    // Use the Pages API here: https://gridsome.org/docs/pages-api/
+    const {data} = await graphql(`{
+      allStrapiArticle {
+        edges {
+          node {
+            id,
+            title,
+            content,
+            slug,
+            image{
+              url,
+              caption
+            },
+            published_at
+          }
+        }
+      }
+    }`) 
+    data.allStrapiArticle.edges.forEach(({node})=>{
+      createPage({
+        path:`/blog/${node.slug}`,
+        component:'./src/templates/Post.vue',
+        context:{
+          id: node.id
+        }
+      })
+    })
+  })
 }

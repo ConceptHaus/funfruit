@@ -1,8 +1,8 @@
 <template lang="pug">
-    .flex.flex-col.justify-center.items-center
+    .flex.flex-col.justify-start.items-start
         h2.text-ui-typo.text-3xl DESCUBRE
         g-image(src="@/assets/images/blog_desc.png")
-        .flex.flex-col.my-4.w-full
+        .flex.flex-col.my-4(class="w-3/4")
             .flex.justify-between.items-center.flex-wrap.my-2
                 a(href="#").text-ui-navy.font-bold.text-sm RECETAS
                 p.text-ui-navy.text-sm 56 entradas
