@@ -20,7 +20,7 @@ export default {
 <style lang="scss">
 :root {
   --color-ui-background: theme('colors.white');
-  --color-ui-typo: #000000;
+  --color-ui-typo: #333333;
   --color-ui-gray: #4F4F4F;
   --color-ui-primary: #41427D;
   --color-ui-secondary:#F08828;
@@ -31,7 +31,7 @@ export default {
   --color-ui-yellow:#EFC432;
   scroll-behavior: smooth;
 }
-html, body{
+html, body, p{
   font-family: "Zilla Slab";
 }
 h1,h2,h4{
