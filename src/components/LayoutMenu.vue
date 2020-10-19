@@ -24,7 +24,7 @@
         .element(@click="hideMenu")
             g-link.hover_text-ui-green.hover_font-bold(to="/category/funfruit"  @click="linkFilter('all')") Fun Fruit
             img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
-            .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-8.left-0
+            .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-3.left-0
                 img(src="@/assets/images/image-hero.png", alt="alt")
                 .hero-menu--list.flex.justify-center.items-center
                     ul
@@ -40,7 +40,7 @@
         .element(@click="hideMenu")
             g-link.hover_text-ui-green.hover_font-bold(to="/category/granel"  @click="linkFilter('all')") Productos a granel
             img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
-            .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-8.left-0
+            .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-3.left-0
                 img(src="@/assets/images/funfruit-menu.jpg", alt="alt")
                 .hero-menu--list.flex.justify-center.items-center
                     ul
