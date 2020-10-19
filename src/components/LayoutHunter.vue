@@ -9,26 +9,15 @@
             hr(class="sm_w-2/3 w-full").border-solid.border-gray-500
             //- h2(class="sm_w-1/2 w-full").hunter__h2.my-16.sm_text-3xl.text-xl.text-ui-typo.uppercase.text-center Ingresa la vacante que te interese en el buscador
             .flex.flex-col.my-4.sm_px-0.px-4(class="sm_w-1/2 w-full")
-                details
-                    summary.mb-10.text-2xl.py-4.border-b.border-grey-lighter.flex.items-center  Vacante X #[button.ml-auto #[svg.fill-current.opacity-75.w-6.h-6.mr-1(viewBox="0 0 20 20") #[path(d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z")]]]
+                details(v-for="vacante in $static.allStrapiBolsaTrabajo.edges" :key="vacante.node.id")
+                    summary.mb-10.text-2xl.py-4.border-b.border-grey-lighter.flex.items-center  {{vacante.node.Puesto}} #[button.ml-auto #[svg.fill-current.opacity-75.w-6.h-6.mr-1(viewBox="0 0 20 20") #[path(d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z")]]]
                     .mt-4.leading-normal.text-md.flex.flex-col.sm_flex-row.items-center
-                        .text-base Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor diam adipiscing Tincidunt nullam scelerisque. Praesent in bibendum laoreet placerat curabitur Ac, sagittis risus, mauris dictum volutpat nec pretium tortor, vestibulum. 
-                        button(class="w-2/3" @click="showModal=true").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Aplicar
-                details
-                    summary.mb-10.text-2xl.py-4.border-b.border-grey-lighter.flex.items-center  Vacante X #[button.ml-auto #[svg.fill-current.opacity-75.w-6.h-6.mr-1(viewBox="0 0 20 20") #[path(d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z")]]]
-                    .mt-4.leading-normal.text-md.flex.flex-col.sm_flex-row.items-center
-                        .text-base Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor diam adipiscing Tincidunt nullam scelerisque. Praesent in bibendum laoreet placerat curabitur Ac, sagittis risus, mauris dictum volutpat nec pretium tortor, vestibulum. 
-                        button(class="w-2/3" @click="showModal=true").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Aplicar
-                details
-                    summary.mb-10.text-2xl.py-4.border-b.border-grey-lighter.flex.items-center  Vacante X #[button.ml-auto #[svg.fill-current.opacity-75.w-6.h-6.mr-1(viewBox="0 0 20 20") #[path(d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z")]]]
-                    .mt-4.leading-normal.text-md.flex.flex-col.sm_flex-row.items-center
-                        .text-base Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor diam adipiscing Tincidunt nullam scelerisque. Praesent in bibendum laoreet placerat curabitur Ac, sagittis risus, mauris dictum volutpat nec pretium tortor, vestibulum. 
-                        button(class="w-2/3" @click="showModal=true").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Aplicar
-                details
-                    summary.mb-10.text-2xl.py-4.border-b.border-grey-lighter.flex.items-center  Vacante X #[button.ml-auto #[svg.fill-current.opacity-75.w-6.h-6.mr-1(viewBox="0 0 20 20") #[path(d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z")]]]
-                    .mt-4.leading-normal.text-md.flex.flex-col.sm_flex-row.items-center
-                        .text-base Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor diam adipiscing Tincidunt nullam scelerisque. Praesent in bibendum laoreet placerat curabitur Ac, sagittis risus, mauris dictum volutpat nec pretium tortor, vestibulum. 
-                        button(class="w-2/3" @click="showModal=true").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Aplicar
+                        .block
+                            VueShowdown.my-3.text-base(:markdown="vacante.node.Perfil" flavor="github" :options="{ emoji: true }") 
+                            VueShowdown.my-3.text-base(:markdown="vacante.node.Funciones" flavor="github" :options="{ emoji: true }") 
+                            VueShowdown.my-3.text-base(:markdown="vacante.node.Conocimientos" flavor="github" :options="{ emoji: true }") 
+                            VueShowdown.my-3.text-base(:markdown="vacante.node.Habilidades" flavor="github" :options="{ emoji: true }") 
+                            button(class="w-2/3" @click="showModal=true").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Aplicar
         ClientOnly
             t-modal.p-5(v-model="showModal")
                 template(v-slot:default)
@@ -58,6 +47,23 @@
                         button(class="w-2/3").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Postularme
 
 </template>
+<static-query>
+    query{
+    allStrapiBolsaTrabajo(sortBy:"published_at", order:DESC){
+        edges{
+            node{
+                id,
+                Puesto,
+                Perfil,
+                Funciones,
+                Conocimientos,
+                Habilidades,
+                published_at
+            }
+        }
+    }
+}
+</static-query>
 <script>
 import Dropzone from 'nuxt-dropzone'
 import 'nuxt-dropzone/dropzone.css'
@@ -73,6 +79,11 @@ export default {
                 headers: { "My-Awesome-Header": "header value" }
             }
         }
+    },
+    filters:{
+        truncate: function (text, length, suffix) {
+            return text.substring(0, length) + suffix;
+        },
     },
     mounted(){
         
