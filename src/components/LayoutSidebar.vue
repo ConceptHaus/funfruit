@@ -27,7 +27,7 @@
             p.text-ui-typo.text-base.my-2.text-center(class="w-1/2") Linguini con setas shiitake y nueces.
         .flex.sm_flex-row.flex-col.sm_justify-around.justify-center.items-center.my-4
             g-image(src="@/assets/images/blog2.png" class="")
-            p.text-ui-typo.text-base.my-2.text-center(class="w-1/2") Ensalada de corujas con queso de cabra y nueces.
+            p.text-ui-typo.text-base.my-2.text-center(class="w-1/2") Linguini con setas shiitake y nueces.
         .flex.sm_flex-row.flex-col.sm_justify-around.justify-center.items-center.my-4
             g-image(src="@/assets/images/blog3.png" class="")
             p.text-ui-typo.text-base.my-2.text-center(class="w-1/2") Brownie de Katharine Hepburn.
