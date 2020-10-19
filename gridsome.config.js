@@ -15,7 +15,7 @@ module.exports = {
       options: {
         apiURL: 'https://intense-brook-96340.herokuapp.com',
         queryLimit: 1000, // Defaults to 100
-        contentTypes: ['Article','Category','Product','BolsaTrabajo'],
+        contentTypes: ['Article','Category','Product','bolsa-trabajo'],
         // Possibility to login with a Strapi user,
         // when content types are not publicly available (optional).
         loginData: {
