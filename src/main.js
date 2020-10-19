@@ -46,7 +46,9 @@ export default function (Vue, { router, head, isClient,appOptions }) {
     }
   }
   Vue.component('Layout', DefaultLayout)
-  Vue.use(VueTailwind,settings)
+  if(isClient){
+    Vue.use(VueTailwind,settings)
+  }
   Vue.use(Vuex)
   appOptions.store = new Vuex.Store({
     state:{
