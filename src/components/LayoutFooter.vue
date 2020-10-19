@@ -16,7 +16,7 @@
             .block
                 a(href="/contacto").block.text-ui-light.text-center Contáctanos
                 a(href="/bolsa-de-trabajo").block.text-ui-light.my-5.text-center Únete a nuestro equipo
-                p.text-ui-light.my-5.text-center Blog
+                a(href="/blog").block.text-ui-light.my-5.text-center Blog
                 .flex.justify-center
                     img.mx-3(src="@/assets/images/facebook.svg", alt="alt")
                     img.mx-3(src="@/assets/images/instagram.svg", alt="alt")

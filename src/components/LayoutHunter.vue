@@ -29,32 +29,33 @@
                     .mt-4.leading-normal.text-md.flex.flex-col.sm_flex-row.items-center
                         .text-base Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor diam adipiscing Tincidunt nullam scelerisque. Praesent in bibendum laoreet placerat curabitur Ac, sagittis risus, mauris dictum volutpat nec pretium tortor, vestibulum. 
                         button(class="w-2/3" @click="showModal=true").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Aplicar
-        t-modal.p-5(v-model="showModal")
-            template(v-slot:default)
-                form(name="form" class="w-full")
-                    .flex.flex-wrap.p-4.sm_p-0.sm_my-10.sm_px-10
-                        .w-full.px-3.mb-6
-                            label.block.text-ui-typo.text-base.mb-2 Nombre completo #[span.text-red-600 *]
-                            input.py-3.px-4.mb-1.w-full.form-input.border-ui-typo(name="name")
-                        .w-full.px-3.mb-6(class="sm_w-1/2")
-                            label.block.text-ui-typo.text-base.mb-2 Correo electrónico #[span.text-red-600 *]
-                            input.py-3.px-4.mb-1.w-full.form-input.border-ui-typo(name="name")
-                        .w-full.px-3.mb-6(class="sm_w-1/2")
-                            label.block.text-ui-typo.text-base.mb-2 Teléfono #[span.text-red-600 *]
-                            input.py-3.px-4.mb-1.w-full.form-input.border-ui-typo(name="name")
-                        .w-full.px-3.mb-6
-                            label.block.text-ui-typo.text-base.mb-2 Adjunta tu CV #[span.text-red-600 *]
-                            select.py-3.px-4.mb-1.w-full.form-select.border-ui-typo(name="name")
-                                option Vacante X
-                                option Vacante X
-                                option Vacante X
-                                option Vacante X
-                                option Vacante X
-                        .w-full.px-3.mb-6
-                            dropzone(id="dropzone" :options="dropzoneOptions")
-            template(v-slot:footer)
-                .flex
-                    button(class="w-2/3").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Postularme
+        ClientOnly
+            t-modal.p-5(v-model="showModal")
+                template(v-slot:default)
+                    form(name="form" class="w-full")
+                        .flex.flex-wrap.p-4.sm_p-0.sm_my-10.sm_px-10
+                            .w-full.px-3.mb-6
+                                label.block.text-ui-typo.text-base.mb-2 Nombre completo #[span.text-red-600 *]
+                                input.py-3.px-4.mb-1.w-full.form-input.border-ui-typo(name="name")
+                            .w-full.px-3.mb-6(class="sm_w-1/2")
+                                label.block.text-ui-typo.text-base.mb-2 Correo electrónico #[span.text-red-600 *]
+                                input.py-3.px-4.mb-1.w-full.form-input.border-ui-typo(name="name")
+                            .w-full.px-3.mb-6(class="sm_w-1/2")
+                                label.block.text-ui-typo.text-base.mb-2 Teléfono #[span.text-red-600 *]
+                                input.py-3.px-4.mb-1.w-full.form-input.border-ui-typo(name="name")
+                            .w-full.px-3.mb-6
+                                label.block.text-ui-typo.text-base.mb-2 Adjunta tu CV #[span.text-red-600 *]
+                                select.py-3.px-4.mb-1.w-full.form-select.border-ui-typo(name="name")
+                                    option Vacante X
+                                    option Vacante X
+                                    option Vacante X
+                                    option Vacante X
+                                    option Vacante X
+                            .w-full.px-3.mb-6
+                                dropzone(id="dropzone" :options="dropzoneOptions")
+                template(v-slot:footer)
+                    .flex
+                        button(class="w-2/3").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Postularme
 
 </template>
 <script>

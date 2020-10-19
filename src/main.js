@@ -4,6 +4,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import Vuex from 'vuex'
 import VueTailwind from 'vue-tailwind'
+import VueShowdown from 'vue-showdown'
 
 export default function (Vue, { router, head, isClient,appOptions }) {
   // Set default layout as a global component
@@ -46,7 +47,10 @@ export default function (Vue, { router, head, isClient,appOptions }) {
     }
   }
   Vue.component('Layout', DefaultLayout)
-  Vue.use(VueTailwind,settings)
+  Vue.use(VueShowdown)
+  if(isClient){
+    Vue.use(VueTailwind,settings)
+  }
   Vue.use(Vuex)
   appOptions.store = new Vuex.Store({
     state:{
