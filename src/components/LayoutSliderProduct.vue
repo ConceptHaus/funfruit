@@ -15,7 +15,7 @@ section#products
             .swiper-slide.slide(@mouseenter="sunEffect(2)" @mouseleave="sunEffectOver")
                 .products__sun.products__sun2.absolute
                     img.mx-auto.object-contain(src="@/assets/images/sun.svg")
-                img.mx-auto.object-contain(src="@/assets/images/products/nut-2.jpg")
+                img.mx-auto.object-contain(src="@/assets/images/products/nut-2.png")
                 h2.text-xl.block.mx-auto.my-4.text-ui-navy.text-center NUEZ DE LA INDIA
                 g-link(to="/nut-house/nuez-de-la-india-tostada-y-salada")
                     button.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-16.rounded Ver producto

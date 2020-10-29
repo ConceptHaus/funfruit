@@ -4,59 +4,59 @@
         .element(@click="hideMenu")
             g-link.hover_text-ui-green.hover_font-bold.mt-4(to="/category/nut-house" @click="linkFilter('all')") The Nut House
             img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
-            .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-3.left-0
-                img(src="@/assets/images/nuthouse-menu.png", alt="alt")
-                .hero-menu--list.flex.justify-center.items-center
-                    ul
-                        li.text-lg
-                            a(href="/category/nut-house" @click="linkFilter('Doy Pack')") Doy Pack
-                .hero-menu--list.flex.justify-center.items-center
-                    ul
-                        li.text-lg 
-                            a(href="/category/nut-house" @click="linkFilter('Snack')")  Snack
-                .hero-menu--list.flex.justify-center.items-center
-                    ul
-                        li.text-lg 
-                            a(href="/category/nut-house" @click="linkFilter('Vitroleros')" ) Vitrolero
-                .flex.flex-col.justify-center
-                    a(href="/category/nut-house" @click="linkFilter('all')")
-                        button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
+            //- .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-3.left-0
+            //-     img(src="@/assets/images/nuthouse-menu.png", alt="alt")
+            //-     .hero-menu--list.flex.justify-center.items-center
+            //-         ul
+            //-             li.text-lg
+            //-                 a(href="/category/nut-house" @click="linkFilter('Doy Pack')") Doy Pack
+            //-     .hero-menu--list.flex.justify-center.items-center
+            //-         ul
+            //-             li.text-lg 
+            //-                 a(href="/category/nut-house" @click="linkFilter('Snack')")  Snack
+            //-     .hero-menu--list.flex.justify-center.items-center
+            //-         ul
+            //-             li.text-lg 
+            //-                 a(href="/category/nut-house" @click="linkFilter('Vitroleros')" ) Vitrolero
+            //-     .flex.flex-col.justify-center
+            //-         a(href="/category/nut-house" @click="linkFilter('all')")
+            //-             button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
         .element(@click="hideMenu")
             g-link.hover_text-ui-green.hover_font-bold(to="/category/funfruit"  @click="linkFilter('all')") Fun Fruit
             img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
-            .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-3.left-0
-                img(src="@/assets/images/image-hero.png", alt="alt")
-                .hero-menu--list.flex.justify-center.items-center
-                    ul
-                        li.text-lg
-                            a(href="/category/funfruit" @click="linkFilter('Abarrotes')") Abarrotes
-                .hero-menu--list.flex.justify-center.items-center
-                    ul
-                        li.text-lg 
-                            a(href="/category/funfruit" @click="linkFilter('Fruta en almíbar')") Fruta en almíbar
-                .flex.flex-col.justify-center
-                    a(href="/category/funfruit"  @click="linkFilter('all')") 
-                        button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
+            //- .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-3.left-0
+            //-     img(src="@/assets/images/image-hero.png", alt="alt")
+            //-     .hero-menu--list.flex.justify-center.items-center
+            //-         ul
+            //-             li.text-lg
+            //-                 a(href="/category/funfruit" @click="linkFilter('Abarrotes')") Abarrotes
+            //-     .hero-menu--list.flex.justify-center.items-center
+            //-         ul
+            //-             li.text-lg 
+            //-                 a(href="/category/funfruit" @click="linkFilter('Fruta en almíbar')") Fruta en almíbar
+            //-     .flex.flex-col.justify-center
+            //-         a(href="/category/funfruit"  @click="linkFilter('all')") 
+            //-             button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
         .element(@click="hideMenu")
             g-link.hover_text-ui-green.hover_font-bold(to="/category/granel"  @click="linkFilter('all')") Productos a granel
             img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
-            .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-3.left-0
-                img(src="@/assets/images/funfruit-menu.jpg", alt="alt")
-                .hero-menu--list.flex.justify-center.items-center
-                    ul
-                        li.text-lg
-                            a(href="/category/granel" @click="linkFilter('Frutos secos')") Frutos secos
-                .hero-menu--list.flex.justify-center.items-center
-                    ul
-                        li.text-lg 
-                            a(href="/category/granel" @click="linkFilter('Fruta deshidratada')") Fruta deshidratada
-                .hero-menu--list.flex.justify-center.items-center
-                    ul
-                        li.text-lg 
-                            a(href="/category/granel"  @click="linkFilter('Nueces y semillas')") Nueces y semillas
-                .flex.flex-col.justify-center
-                    a(href="/category/granel"  @click="linkFilter('all')")
-                        button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
+            //- .hero-menu.absolute.w-full.bg-gray-100.flex.justify-around.z-10.py-3.left-0
+            //-     img(src="@/assets/images/funfruit-menu.jpg", alt="alt")
+            //-     .hero-menu--list.flex.justify-center.items-center
+            //-         ul
+            //-             li.text-lg
+            //-                 a(href="/category/granel" @click="linkFilter('Frutos secos')") Frutos secos
+            //-     .hero-menu--list.flex.justify-center.items-center
+            //-         ul
+            //-             li.text-lg 
+            //-                 a(href="/category/granel" @click="linkFilter('Fruta deshidratada')") Fruta deshidratada
+            //-     .hero-menu--list.flex.justify-center.items-center
+            //-         ul
+            //-             li.text-lg 
+            //-                 a(href="/category/granel"  @click="linkFilter('Nueces y semillas')") Nueces y semillas
+            //-     .flex.flex-col.justify-center
+            //-         a(href="/category/granel"  @click="linkFilter('all')")
+            //-             button.block.my-5.bg-ui-blue.text-xl.text-white.py-3.px-16.rounded Ver todo
         .element
             g-link.hover_text-ui-green.hover_font-bold(to="/nosotros") Acerca de Fun Fruit
             img.active-shape.ml-auto.mb-4.sm_mb-0(src="@/assets/images/active-shape.svg", alt="alt")
