@@ -9,13 +9,16 @@ section
         .swiper-wrapper.pb-6
             .swiper-slide.slide__store
                 .card.overflow-hidden.shadow-lg.mb-8.sm_mb-0
-                    img.px-16.py-10.mx-auto(src="@/assets/images/walmart.svg", alt="alt")
+                    a(href="https://www.walmart.com.mx/inicio" target="_blank")
+                        img.px-16.py-10.mx-auto(src="@/assets/images/walmart.svg", alt="alt")
             .swiper-slide.slide__store
                 .card.overflow-hidden.shadow-lg.mb-8.sm_mb-0
-                    img.px-16.py-10.mx-auto(src="@/assets/images/chedraui.svg", alt="alt")
+                    a(href="https://www.chedraui.com.mx/search?text=Nuthouse&method=enter" target="_blank")
+                        img.px-16.py-10.mx-auto(src="@/assets/images/chedraui.svg", alt="alt")
             .swiper-slide.slide__store
                 .card.overflow-hidden.shadow-lg.mb-8.sm_mb-0
-                    img.px-16.py-10.mx-auto(src="@/assets/images/amazon.svg", alt="alt")
+                    a(href="https://www.amazon.com.mx" target="_blank")
+                        img.px-16.py-10.mx-auto(src="@/assets/images/amazon.svg", alt="alt")
     .flex.justify-around.my-10.sm_my-20.items-center
         button.text-xl.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-6.rounded ¡Quiero comprar ahí!
 </template>

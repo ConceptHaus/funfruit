@@ -51,7 +51,7 @@ section.snack
         .swiper-button-next.next-snack
     .block.text-center.mb-20
         h2.text-center.text-3xl.text-ui-navy.my-6 #[span ¿] SE TE ANTOJÓ #[span ?]
-        g-link(to="/category/funfruit")
+        g-link(to="/category/nut-house")
             button.text-xl.block.my-4.mx-auto.bg-ui-blue.text-white.py-3.px-6.rounded Ver todos los productos
 </template>
 <script>
