@@ -20,11 +20,12 @@ section
                     a(href="https://www.amazon.com.mx" target="_blank")
                         img.px-16.py-10.mx-auto(src="@/assets/images/amazon.svg", alt="alt")
     .flex.justify-around.my-10.sm_my-20.items-center
-        button.text-xl.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-6.rounded ¡Quiero comprar ahí!
+        a(href="https://www.chedraui.com.mx/search?text=Nuthouse&method=enter" target="_blank")
+            button.text-xl.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-6.rounded ¡Quiero comprar ahí!
 </template>
 <script>
 import Swiper from 'swiper'
-import 'swiper/css/swiper.min.css'
+import 'swiper/css/swiper.min.css' 
 import gsap from 'gsap'
 export default {
     mounted(){
