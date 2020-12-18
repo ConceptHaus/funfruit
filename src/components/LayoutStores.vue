@@ -21,7 +21,7 @@ section
                         img.px-16.py-10.mx-auto(src="@/assets/images/amazon.svg", alt="alt")
     .flex.justify-around.my-10.sm_my-20.items-center
         a(href="https://www.chedraui.com.mx/search?text=Nuthouse&method=enter" target="_blank")
-            button.text-xl.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-6.rounded ¡Quieroo comprar ahí!
+            button.text-xl.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-6.rounded ¡Quiero comprar ahí!
 </template>
 <script>
 import Swiper from 'swiper'
