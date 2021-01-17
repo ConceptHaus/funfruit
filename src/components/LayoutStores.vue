@@ -17,7 +17,7 @@ section
                         img.px-16.py-10.mx-auto(src="@/assets/images/chedraui.svg", alt="alt")
             .swiper-slide.slide__store
                 .card.overflow-hidden.shadow-lg.mb-8.sm_mb-0
-                    a(href="https://www.amazon.com.mx" target="_blank")
+                    a(href="https://www.amazon.com.mx/funfruitcalidadatugusto" target="_blank")
                         img.px-16.py-10.mx-auto(src="@/assets/images/amazon.svg", alt="alt")
             .swiper-slide.slide__store
                 .card.overflow-hidden.shadow-lg.mb-8.sm_mb-0
