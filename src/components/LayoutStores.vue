@@ -6,7 +6,7 @@ section
         .flex.justify-center.my-4
             p.text-ui-typo.text-lg Toda nuestra variedad #[b a tu alcance]
     .swiper-container.sliderstores.my-20
-        .swiper-wrapper.pb-25
+        .swiper-wrapper.pb-20
             .swiper-slide.slide__store
                 .card.overflow-hidden.shadow-lg.mb-8.sm_mb-0
                     a(href="https://www.walmart.com.mx/inicio" target="_blank")
