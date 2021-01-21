@@ -6,7 +6,7 @@ section
         .flex.justify-center.my-4
             p.text-ui-typo.text-lg Toda nuestra variedad #[b a tu alcance]
     .swiper-container.sliderstores.my-20
-        .swiper-wrapper.pb-20
+        .swiper-wrapper.pb-25
             .swiper-slide.slide__store
                 .card.overflow-hidden.shadow-lg.mb-8.sm_mb-0
                     a(href="https://www.walmart.com.mx/inicio" target="_blank")
@@ -22,7 +22,7 @@ section
             .swiper-slide.slide__store
                 .card.overflow-hidden.shadow-lg.mb-8.sm_mb-0
                     a(href="https://www.fahorro.com/catalogsearch/result/?q=The+nut+house" target="_blank")
-                        img.px-16.py-10.mx-auto(src="@/assets/images/farmacia_ahorro8.png", alt="alt")
+                        img.px-5.py-10.mx-auto(src="@/assets/images/farmacia_ahorro8.png", alt="alt")
     .flex.justify-around.my-10.sm_my-20.items-center
         a(href="https://www.chedraui.com.mx/search?text=Nuthouse&method=enter" target="_blank")
             button.text-xl.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-6.rounded ¡Quiero comprar ahí!
