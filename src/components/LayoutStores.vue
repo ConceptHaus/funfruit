@@ -23,7 +23,7 @@ section
                 .card.overflow-hidden.shadow-lg.mb-8.sm_mb-0
                     a(href="https://www.fahorro.com/catalogsearch/result/?q=The+nut+house" target="_blank")
                         img.px-5.py-10.mx-auto(src="@/assets/images/farmacia_ahorro8.png", alt="alt")
-    .flex.justify-around.my-10.sm_my-20.items-center
+    .flex.justify-around.my-10.sm_my-5.items-center
         a(href="https://www.chedraui.com.mx/search?text=Nuthouse&method=enter" target="_blank")
             button.text-xl.block.my-4.mx-auto.bg-ui-yellow.text-ui-navy.py-3.px-6.rounded ¡Quiero comprar ahí!
 </template>
