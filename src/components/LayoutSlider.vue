@@ -2,7 +2,7 @@
 section
     #slider
         .swiper-container.slideshow
-            .swiper-wrapper
+            .swiper-wrapper 
                 .swiper-slide.slide(:style="{ 'background-image': 'url(' + require('../assets/images/slider-1.jpg') + ')' }")
                     .slide-text.text-left.absolute.first-text.text-center
                         span.slide-title LOS PRODUCTOS MÁS RICOS Y SALUDABLES SON FUNFRUIT
@@ -13,7 +13,7 @@ section
                     .slide-text.text-right.absolute.right-0.mr-16.second-text.text-center
                         span.slide-title AHORA EN
                         img.amazon-logo.object-contain(src="@/assets/images/amazon-white.svg", alt="alt")
-                        g-link(to="/")#button-cta.btn-amazon.inline-block.my-10.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-contain.align-bottom(src="@/assets/images/amazon-logo.svg")]
+                        g-link(to="https://www.amazon.com.mx/funfruitcalidadatugusto")#button-cta.btn-amazon.inline-block.my-10.mx-auto.text-ui-typo.py-2.px-4.rounded Comprar en #[img.mx-1.inline-block.object-contain.align-bottom(src="@/assets/images/amazon-logo.svg")]
             .swiper-button-prev
             .swiper-button-next
     .flex.bg-ui-green.justify-center.p-8
