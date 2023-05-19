@@ -2,10 +2,6 @@
     footer.w-full.bg-ui-navy.p-8
         .flex.flex-col.sm_flex-row.justify-around
             .block
-                h3.text-ui-light.text-center Certificaciones
-                g-image.object-contain.mx-auto.m-5(src="@/assets/images/SGS_FSSC 22000_round_TCL.svg")
-                g-image.object-contain2.mx-auto.m-5(src="@/assets/images/Logo-FSSC-22000 versie_2015_def_.png")
-            .block
                 h1.text-ui-light.text-center FUNFRUIT EN TU BANDEJA DE ENTRADA
                 p.my-5.text-ui-light.text-center Regístrate para recibir ofertas y nuevo contenido de FUNFRUIT.
                 input.my-5.bg-ui-navy.focus_outline-none.focus_shadow-outline.border.border-gray-300.rounded-lg.py-5.px-4.block.w-full.appearance-none.leading-normal(type="email" placeholder="Ingresa tu email")
