@@ -9,15 +9,15 @@
             hr(class="sm_w-2/3 w-full").border-solid.border-gray-500
             //- h2(class="sm_w-1/2 w-full").hunter__h2.my-16.sm_text-3xl.text-xl.text-ui-typo.uppercase.text-center Ingresa la vacante que te interese en el buscador
             .flex.flex-col.my-4.sm_px-0.px-4(class="sm_w-1/2 w-full")
-                details(v-for="vacante in $static.allStrapiBolsaTrabajo.edges" :key="vacante.node.id")
-                    summary.mb-10.text-2xl.py-4.border-b.border-grey-lighter.flex.items-center  {{vacante.node.Puesto}} #[button.ml-auto #[svg.fill-current.opacity-75.w-6.h-6.mr-1(viewBox="0 0 20 20") #[path(d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z")]]]
-                    .mt-4.leading-normal.text-md.flex.flex-col.sm_flex-row.items-center
-                        .block
-                            VueShowdown.my-3.text-base(:markdown="vacante.node.Perfil" flavor="github" :options="{ emoji: true }") 
-                            VueShowdown.my-3.text-base(:markdown="vacante.node.Funciones" flavor="github" :options="{ emoji: true }") 
-                            VueShowdown.my-3.text-base(:markdown="vacante.node.Conocimientos" flavor="github" :options="{ emoji: true }") 
-                            VueShowdown.my-3.text-base(:markdown="vacante.node.Habilidades" flavor="github" :options="{ emoji: true }") 
-                            button(class="w-2/3" @click="showModal=true").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Aplicar
+                //- details(v-for="vacante in $static.allStrapiBolsaTrabajo.edges" :key="vacante.node.id")
+                //-     summary.mb-10.text-2xl.py-4.border-b.border-grey-lighter.flex.items-center  {{vacante.node.Puesto}} #[button.ml-auto #[svg.fill-current.opacity-75.w-6.h-6.mr-1(viewBox="0 0 20 20") #[path(d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z")]]]
+                //-     .mt-4.leading-normal.text-md.flex.flex-col.sm_flex-row.items-center
+                //-         .block
+                //-             VueShowdown.my-3.text-base(:markdown="vacante.node.Perfil" flavor="github" :options="{ emoji: true }") 
+                //-             VueShowdown.my-3.text-base(:markdown="vacante.node.Funciones" flavor="github" :options="{ emoji: true }") 
+                //-             VueShowdown.my-3.text-base(:markdown="vacante.node.Conocimientos" flavor="github" :options="{ emoji: true }") 
+                //-             VueShowdown.my-3.text-base(:markdown="vacante.node.Habilidades" flavor="github" :options="{ emoji: true }") 
+                //-             button(class="w-2/3" @click="showModal=true").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Aplicar
         ClientOnly
             t-modal.p-5(v-model="showModal")
                 template(v-slot:default)
@@ -47,7 +47,7 @@
                         button(class="w-2/3").text-xl.block.my-5.mx-auto.bg-ui-blue.text-white.py-3.px-4.rounded Postularme
 
 </template>
-<static-query>
+<!-- <static-query>
     query{
     allStrapiBolsaTrabajo(sortBy:"published_at", order:DESC){
         edges{
@@ -63,73 +63,81 @@
         }
     }
 }
-</static-query>
+</static-query> -->
 <script>
 import Dropzone from 'nuxt-dropzone'
 import 'nuxt-dropzone/dropzone.css'
 export default {
-    data(){
-        return{
+    data() {
+        return {
             showModal: false,
             dropzoneOptions: {
                 url: 'https://httpbin.org/post',
                 thumbnailWidth: 150,
                 maxFilesize: 0.5,
-                dictDefaultMessage:"Subir archivo",
+                dictDefaultMessage: "Subir archivo",
                 headers: { "My-Awesome-Header": "header value" }
             }
         }
     },
-    filters:{
+    filters: {
         truncate: function (text, length, suffix) {
             return text.substring(0, length) + suffix;
         },
     },
-    mounted(){
-        
+    mounted() {
+
     },
-    components:{
+    components: {
         Dropzone
     }
 }
 </script>
 <style lang="scss" scoped>
-    .hunter{
-        &__input{
-            background-image:url('~@/assets/images/search_icon.svg');
-            background-repeat: no-repeat; 
-            background-size: 20px;
-            background-position-x: 97%;
-            background-position-y: 60%;
-        }
-        &__h2{
-            color:#828282;
-        }
-        details {
-            user-select: none;
-            & summary svg {transform: rotate(90deg);}
-        }
-        details[open] {
-            & summary svg {
-                transform: rotate(-90deg);  
+.hunter {
+    &__input {
+        background-image: url('~@/assets/images/search_icon.svg');
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position-x: 97%;
+        background-position-y: 60%;
+    }
 
-            }
-        
-        }
+    &__h2 {
+        color: #828282;
+    }
 
+    details {
+        user-select: none;
 
-        details[open] summary ~ *
-        {	animation: ease-opacity-t-b .5s ease}
+        & summary svg {
+            transform: rotate(90deg);
+        }
+    }
 
-        summary {
-        cursor: pointer;
-        }
-        svg {
-        transition: all 0.3s;
-        }
-        summary::-webkit-details-marker {
-            display: none;
+    details[open] {
+        & summary svg {
+            transform: rotate(-90deg);
+
         }
 
     }
-</style>
+
+
+    details[open] summary~* {
+        animation: ease-opacity-t-b .5s ease
+    }
+
+    summary {
+        cursor: pointer;
+    }
+
+    svg {
+        transition: all 0.3s;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+}</style>
