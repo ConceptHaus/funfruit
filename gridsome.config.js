@@ -10,7 +10,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-vue-toasted',
     },
-    {
+/*    {
       use: '@gridsome/source-strapi',
       options: {
         apiURL: 'https://intense-brook-96340.herokuapp.com',
@@ -23,7 +23,7 @@ module.exports = {
           password: ''
         }
       }
-    },
+    }, */
     {
       use: 'gridsome-plugin-sass-resources-loader',
       options: {
