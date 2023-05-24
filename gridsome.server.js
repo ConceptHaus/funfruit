@@ -91,7 +91,7 @@ module.exports = function (api) {
       })
     })
   })
-  api.createPages(async ({graphql, createPage }) => {
+ /* api.createPages(async ({graphql, createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
     const {data} = await graphql(`{
       allStrapiArticle {
@@ -119,5 +119,5 @@ module.exports = function (api) {
         }
       })
     })
-  })
+  })*/
 }
