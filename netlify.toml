@@ -1,3 +1,7 @@
 [build]
+  base = ""
+  publish = "build"
   command = "REACT_APP_STAGE=dev npm run build"
-  publish = "dist/"
+  
+[context.production]
+  command = "REACT_APP_STAGE=prod npm run build"
